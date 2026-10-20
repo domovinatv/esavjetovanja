@@ -1,0 +1,38 @@
+{
+  "id": 10346,
+  "url": "https://esavjetovanja.gov.hr/Econ/10346",
+  "title": "Savjetovanje s javnošću o Nacionalnom planu za razvoj umjetne inteligencije za razdoblje do 2032. godine",
+  "opened": "2026-10-16",
+  "closed": "2026-11-15",
+  "report_expected": "2026-12-16",
+  "totals": {
+    "comments": 79,
+    "general": 28,
+    "addition": 51
+  },
+  "sections": 96,
+  "comments_scraped": 79,
+  "documents": [
+    {
+      "name": "Savjetovanje s javnošću o Nacionalnom planu za razvoj umjetne inteligencije za razdoblje do 2032. godine.docx",
+      "file": "documents/Savjetovanje s javnošću o Nacionalnom planu za razvoj umjetne inteligencije za razdoblje do 2032. godine.docx",
+      "kind": "Glavni dokument"
+    },
+    {
+      "name": "Informacija o radnoj skupini - SRS za NPUI.docx",
+      "file": "documents/Informacija o radnoj skupini - SRS za NPUI.docx",
+      "kind": "Dokument savjetovanja"
+    },
+    {
+      "name": "Poziv javnosti NPUI.docx",
+      "file": "documents/Poziv javnosti NPUI.docx",
+      "kind": "Dokument savjetovanja"
+    },
+    {
+      "name": "Standardni obrazac - NPUI i AP.docx",
+      "file": "documents/Standardni obrazac - NPUI i AP.docx",
+      "kind": "Dokument savjetovanja"
+    }
+  ],
+  "scraped_at": "2026-10-20T20:46:33+00:00"
+}
