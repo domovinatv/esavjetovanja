@@ -1,0 +1,20 @@
+{
+  "savjetovanje": 10346,
+  "model": "claude-opus-5-5",
+  "metodologija": 1,
+  "izradjeno": "2026-10-20T23:15:00+02:00",
+  "podaci_preuzeti": "2026-10-20T20:46:33+00:00",
+  "komentara": 79,
+  "dijelova": 96,
+  "otisak_teksta": "e0de9a704157316e",
+  "prosjek": {
+    "ukupno": 41,
+    "ukupno_tezinski": 44,
+    "konkretnost": 40,
+    "mjerljivost": 19,
+    "utemeljenost": 34,
+    "provedivost": 25,
+    "jasnoca": 65
+  },
+  "problemi": []
+}

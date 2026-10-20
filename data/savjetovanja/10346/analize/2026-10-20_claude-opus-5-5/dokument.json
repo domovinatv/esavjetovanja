@@ -1,0 +1,44 @@
+{
+  "sazetak": "Nacionalni plan postavlja četiri posebna cilja (ljudi i vještine, računalna infrastruktura i podaci uključujući hrvatski jezični model, etična i zakonita primjena, istraživanje i gospodarstvo), opisuje devet područja primjene i predviđa oko 932 milijuna eura do 2032. Najkonkretniji je tamo gdje ga vežu europska pravila i već pripremljeni projekti; u većini područja primjene ostaje na razini popisa mogućnosti.",
+  "ocjena_komentar": "Ukupno 44/100 (težinski po duljini teksta): dokument je jasno napisan (jasnoća 65), ali slabo mjerljiv (19) i slabo provediv iz samog teksta (25). Pokazatelji postoje na razini posebnih ciljeva, no gotovo nigdje na razini područja i mjera; nositelji, rokovi i iznosi uglavnom se prepuštaju akcijskom planu.",
+  "glavni_nalazi": [
+    "Tablica mjera nosi naslov prvog razdoblja 2026.–2028., a 16 od 33 mjere ima rok kasnije, do kraja 2032.; nema iznosa po mjeri, a dio rokova je u obrnutom redoslijedu od ovisnosti među mjerama.",
+    "Poglavlje 4 (devet područja primjene, 52 dijela) najslabiji je dio dokumenta: prosjek oko 34, jer uglavnom opisuje što UI „može“, bez polaznog stanja, nositelja i instrumenta.",
+    "Industrija, energetika i okoliš, poljoprivreda i turizam nemaju sektorsku mjeru u prvom akcijskom planu; odabir je, prema samom tekstu, vođen spremnošću projekata, a ne strateškom važnošću.",
+    "Financijski okvir se zbraja, ali ne razdvaja osigurana od uvjetnih sredstava ni izvore (proračun, EU, privatni kapital); iznosi za 2029.–2032. su shematski zaokruženi.",
+    "Hrvatski veliki jezični model najvidljivija je investicija, a nema analize alternativa, slučajeva uporabe, licence ni pokazatelja uspjeha.",
+    "Pojedini pokazatelji ne mjere napredak: pokazatelj 2.1 ima polaznu i ciljnu vrijednost 100 %, a pokazatelji 3.1 i 3.3 postavljaju zakonski minimum kao cilj za 2032.",
+    "Analiza stanja daje brojke za povezanost i vještine, ali ne kvantificira upravo ključna ograničenja: računalne kapacitete, kvalitetu podataka, jezične resurse i postojeće UI sustave u javnom sektoru."
+  ],
+  "jaci_dijelovi": [
+    {"section_id": 1033731, "zasto": "pokazatelji s polaznim i ciljnim vrijednostima (74)"},
+    {"section_id": 1033743, "zasto": "mjerljivi pokazatelji za istraživanje i gospodarstvo (62)"},
+    {"section_id": 1033737, "zasto": "konkretne regulatorne obveze iz Akta o UI-ju s rokovima (58)"},
+    {"section_id": 1033718, "zasto": "jasan pregled međunarodnog okvira (57)"},
+    {"section_id": 1033714, "zasto": "izvršni sažetak s iznosima i ciljnim vrijednostima (54)"}
+  ],
+  "slabiji_dijelovi": [
+    {"section_id": 1033787, "zasto": "turistički tokovi bez pokazatelja, nositelja i instrumenta (25)"},
+    {"section_id": 1033764, "zasto": "kibernetička sigurnost ponavlja uvod i nema obveza (26)"},
+    {"section_id": 1033772, "zasto": "sigurnost hrane bez obveze, nositelja i roka (26)"},
+    {"section_id": 1033755, "zasto": "istraživanje lijekova samo potencijalnim formulacijama (28)"},
+    {"section_id": 1033724, "zasto": "SWOT nije povezan s ciljevima ni mjerama (36)"}
+  ],
+  "sto_nedostaje": [
+    "raspodjela sredstava po mjeri i po izvoru financiranja",
+    "vodeći nositelj za mjere s više nositelja i rokovi izraženi datumom",
+    "polazno stanje i pokazatelji za područja primjene u poglavlju 4",
+    "kriteriji po kojima su odabrana područja i projekti te što se neće financirati",
+    "popis postojećih UI sustava u javnom sektoru i procjena potražnje za računalnim kapacitetima",
+    "neovisno vrednovanje s rokom i javno objavljivanje godišnjih izvješća"
+  ],
+  "komentari": "Do snapshota je stiglo 79 komentara od 5 autora; jedan podnositelj (obrt za savjetovanje) poslao je 69, sve na dan otvaranja, uglavnom kao nadopune teksta gotovo svakog dijela. Model je 71 komentar svrstao u prijedloge izmjene, 5 u pitanja i 3 u kritike. Primjedbe su većinom utemeljene (prosjek oko 80) i poklapaju se s nalazima analize: prioritizacija, financijska zatvorenost, nositelji i mjerljivost. Pitanja ostalih autora tiču se sigurnosnog testiranja, vaučera i hrvatskog jezičnog modela.",
+  "gdje_komentirati": [
+    {"section_id": 1033796, "zasto": "tablica mjera: rokovi izvan razdoblja, nema iznosa ni vodećih nositelja"},
+    {"section_id": 1033798, "zasto": "raspodjela sredstava po mjerama i izvorima"},
+    {"section_id": 1033733, "zasto": "hrvatski jezični model: alternative, slučajevi uporabe, licenca, pokazatelj"},
+    {"section_id": 1033795, "zasto": "spremnost projekata kao jedini kriterij odabira područja"},
+    {"section_id": 1033735, "zasto": "pokazatelj 2.1 bez informacijske vrijednosti"},
+    {"section_id": 1033805, "zasto": "vrednovanje bez roka, nositelja i neovisnosti"}
+  ]
+}

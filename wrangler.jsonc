@@ -1,0 +1,8 @@
+{
+  // Statična stranica: `uv run esavjetovanja site 10346 && npx wrangler deploy`
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "esavjetovanje",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./site" },
+  "routes": [{ "pattern": "esavjetovanje.domovina.ai", "custom_domain": true }]
+}

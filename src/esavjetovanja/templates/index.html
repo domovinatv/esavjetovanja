@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__ · analiza</title>
+<meta name="description" content="Tekst savjetovanja, javni komentari i analiza jezičnog modela po dijelovima dokumenta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7f6f2; --surface: #ffffff; --surface-2: #f0eee8; --text: #1d1d1b; --muted: #66645e;
+  --line: #e2dfd6; --accent: #b3261e; --accent-soft: #fbeae8; --link: #1f4e8c;
+  --s0: #c0392b; --s1: #e67e22; --s2: #d4ac0d; --s3: #6aa84f; --s4: #2e7d32; --snull: #b9b6ad;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151514; --surface: #1e1e1c; --surface-2: #272724; --text: #ecebe6; --muted: #a3a097;
+    --line: #34332f; --accent: #ef6b62; --accent-soft: #3a2422; --link: #8fb4ec;
+    --s0: #e0675b; --s1: #ee9a4f; --s2: #e3c34d; --s3: #8cc474; --s4: #5cb860; --snull: #5d5b55;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151514; --surface: #1e1e1c; --surface-2: #272724; --text: #ecebe6; --muted: #a3a097;
+  --line: #34332f; --accent: #ef6b62; --accent-soft: #3a2422; --link: #8fb4ec;
+  --s0: #e0675b; --s1: #ee9a4f; --s2: #e3c34d; --s3: #8cc474; --s4: #5cb860; --snull: #5d5b55;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Inter, system-ui, sans-serif; }
+a { color: var(--link); }
+h1, h2, h3 { line-height: 1.25; }
+.serif { font-family: "Source Serif 4", Georgia, serif; }
+.muted { color: var(--muted); }
+.wrap { max-width: 1360px; margin: 0 auto; padding: 0 16px; }
+
+header.top { border-bottom: 1px solid var(--line); background: var(--surface); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 10px; padding-bottom: 10px; }
+.brand { font-weight: 700; letter-spacing: -.01em; text-decoration: none; color: var(--text); }
+.brand span { color: var(--accent); }
+.top nav { display: flex; gap: 14px; font-size: 14px; flex-wrap: wrap; }
+
+.hero { padding: 32px 0 8px; }
+.hero h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(24px, 3.4vw, 38px); margin: 0 0 12px; max-width: 980px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; }
+.chip { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+.chip.open { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+.grid-over { display: grid; grid-template-columns: 320px 1fr; gap: 16px; margin: 20px 0; }
+@media (max-width: 900px) { .grid-over { grid-template-columns: 1fr; } }
+.scorebox { padding: 20px; }
+.bigscore { display: flex; align-items: baseline; gap: 8px; }
+.bigscore b { font-size: 56px; line-height: 1; font-weight: 700; }
+.bars { margin-top: 16px; display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: 110px 1fr 32px; align-items: center; gap: 8px; font-size: 13px; }
+.bar .track { height: 8px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+.bar .fill { height: 100%; border-radius: 99px; }
+.bar .v { text-align: right; font-variant-numeric: tabular-nums; }
+.snapmeta { font-size: 12px; color: var(--muted); margin-top: 16px; border-top: 1px solid var(--line); padding-top: 12px; }
+.synth { padding: 20px 24px; }
+.synth h2 { margin: 0 0 8px; font-size: 20px; }
+.synth p { margin: 0 0 12px; }
+.synth h3 { font-size: 15px; margin: 18px 0 6px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.synth ul { margin: 0; padding-left: 20px; }
+.synth li { margin-bottom: 4px; }
+
+.howto { padding: 16px 20px; margin: 16px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; font-size: 14px; }
+.howto b { display: block; margin-bottom: 2px; }
+.legend { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; align-items: center; margin-top: 6px; }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 4px; }
+
+.heat { padding: 16px 20px; margin: 16px 0; }
+.heat h2 { font-size: 18px; margin: 0 0 12px; }
+.heatrow { display: grid; grid-template-columns: minmax(140px, 300px) 1fr 44px; gap: 10px; align-items: center; padding: 5px 0; border-top: 1px solid var(--line); font-size: 14px; }
+.heatrow:first-of-type { border-top: 0; }
+.cells { display: flex; flex-wrap: wrap; gap: 3px; }
+.cell { width: 18px; height: 18px; border-radius: 4px; display: inline-block; position: relative; text-decoration: none; }
+.cell.c::after { content: ""; position: absolute; right: -2px; top: -2px; width: 7px; height: 7px; border-radius: 50%; background: var(--text); border: 1.5px solid var(--surface); }
+@media (max-width: 600px) { .heatrow { grid-template-columns: 1fr 40px; } .heatrow .cells { grid-column: 1 / -1; grid-row: 2; } }
+
+.layout { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; margin-top: 8px; }
+@media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } .toc { display: none; } }
+.toc { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; padding: 12px; font-size: 13px; }
+.toc a { display: flex; gap: 8px; align-items: flex-start; padding: 4px 6px; border-radius: 6px; color: var(--text); text-decoration: none; }
+.toc a:hover, .toc a.active { background: var(--surface-2); }
+.toc .dot { flex: none; width: 10px; height: 10px; border-radius: 3px; margin-top: 5px; }
+.toc .n { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+.toc .l2 { padding-left: 18px; } .toc .l3 { padding-left: 30px; } .toc .l4 { padding-left: 42px; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; align-items: center; }
+.filters button { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+.filters input { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; padding: 6px 14px; min-width: 0; flex: 1 1 180px; }
+
+.sec { padding: 20px 24px; margin-bottom: 16px; border-left: 6px solid var(--snull); }
+@media (max-width: 600px) { .sec { padding: 16px; } }
+.crumbs { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.sechead { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+.sechead h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 22px; margin: 0; }
+.pill { flex: none; min-width: 48px; text-align: center; font-weight: 700; border-radius: 10px; padding: 6px 10px; color: #fff; font-variant-numeric: tabular-nums; }
+.pill small { display: block; font-weight: 500; font-size: 10px; opacity: .9; }
+.tag { display: inline-block; font-size: 12px; background: var(--surface-2); border-radius: 6px; padding: 1px 8px; margin-right: 6px; color: var(--muted); }
+.summary { background: var(--surface-2); border-radius: 10px; padding: 12px 16px; margin: 14px 0; }
+.summary b { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); display: block; margin-bottom: 2px; }
+.minibars { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 6px 16px; margin: 10px 0; }
+.minibars .bar { grid-template-columns: 90px 1fr 28px; font-size: 12px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
+.sec h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 14px 0 6px; }
+.sec ul { margin: 0; padding-left: 20px; }
+.sec li { margin-bottom: 4px; }
+.why { font-size: 14px; color: var(--muted); }
+table.obv { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.obv th, table.obv td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tablewrap { overflow-x: auto; }
+details.orig { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+details.orig summary { cursor: pointer; font-weight: 600; font-size: 14px; }
+.origtext { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; line-height: 1.6; margin-top: 8px; overflow-x: auto; }
+.origtext table { border-collapse: collapse; font-family: Inter, sans-serif; font-size: 13px; margin: 8px 0; }
+.origtext td, .origtext th { border: 1px solid var(--line); padding: 4px 8px; vertical-align: top; }
+
+.comments { margin-top: 16px; }
+.cm { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-top: 10px; }
+.cmhead { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; font-size: 13px; }
+.cmhead .who { font-weight: 600; }
+.cmeval { margin-top: 8px; font-size: 14px; display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; }
+.cmeval .pill { font-size: 13px; padding: 4px 8px; min-width: 40px; }
+.cm details summary { cursor: pointer; font-size: 13px; color: var(--link); margin-top: 8px; }
+.cmtext { white-space: pre-wrap; font-size: 14px; margin-top: 6px; }
+footer { margin: 40px 0; font-size: 13px; color: var(--muted); }
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#">esavjetovanje<span>.</span>domovina.ai</a>
+  <nav><a href="#pregled">Pregled</a><a href="#karta">Karta</a><a href="#dokument">Dokument</a><a id="srcLink" href="#">Izvornik</a><a href="https://github.com/domovinatv/esavjetovanja">GitHub</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero" id="pregled">
+    <h1 id="title"></h1>
+    <div class="chips" id="chips"></div>
+  </section>
+
+  <div class="card howto">
+    <div><b>1. Pregled</b>Ukupna ocjena i glavni nalazi za cijeli dokument. Ocjene su mišljenje jezičnog modela, ne službena ocjena.</div>
+    <div><b>2. Karta</b>Svaki kvadratić je jedan dio dokumenta, obojan po ocjeni. Točkica znači da dio ima komentare. Klik vodi na dio.</div>
+    <div><b>3. Dio po dio</b>„Ukratko“ kaže što dio stvarno tvrdi. Ispod su slabosti, otvorena pitanja, izvorni tekst i komentari s procjenom.</div>
+    <div><b>Ljestvica 0–100</b>
+      <div class="legend"><span><i style="background:var(--s0)"></i>0–20 fraze</span><span><i style="background:var(--s1)"></i>21–40 smjer</span><span><i style="background:var(--s2)"></i>41–60 djelomično</span><span><i style="background:var(--s3)"></i>61–80 konkretno</span><span><i style="background:var(--s4)"></i>81–100 operativno</span><span><i style="background:var(--snull)"></i>ne ocjenjuje se</span></div>
+    </div>
+  </div>
+
+  <div class="grid-over" id="overview"></div>
+
+  <section class="card heat" id="karta"><h2>Karta dokumenta</h2><div id="heat"></div></section>
+
+  <div class="layout" id="dokument">
+    <nav class="card toc" id="toc" aria-label="Sadržaj"></nav>
+    <div>
+      <div class="filters" role="group" aria-label="Filtri">
+        <button data-f="all" aria-pressed="true">Svi dijelovi</button>
+        <button data-f="comments" aria-pressed="false">S komentarima</button>
+        <button data-f="weak" aria-pressed="false">Najslabiji prvo</button>
+        <input id="q" type="search" placeholder="Traži u tekstu i komentarima…">
+      </div>
+      <div id="sections"></div>
+    </div>
+  </div>
+
+  <footer id="foot"></footer>
+</main>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const CRIT = [['konkretnost','Konkretnost'],['mjerljivost','Mjerljivost'],['utemeljenost','Utemeljenost'],['provedivost','Provedivost'],['jasnoca','Jasnoća']];
+const VRSTA = {uvod:'uvod', analiza_stanja:'analiza stanja', vizija:'vizija', cilj:'cilj', prioritet:'prioritet', mjera:'mjera', pokazatelji:'pokazatelji', podrucje_primjene:'područje primjene', financije:'financije', upravljanje:'upravljanje', pojmovnik:'pojmovnik', pomocni:'pomoćni dio'};
+const CVRSTA = {kritika:'kritika', prijedlog_izmjene:'prijedlog izmjene', podrska:'podrška', pitanje:'pitanje', ostalo:'ostalo'};
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const col = v => v == null ? 'var(--snull)' : v <= 20 ? 'var(--s0)' : v <= 40 ? 'var(--s1)' : v <= 60 ? 'var(--s2)' : v <= 80 ? 'var(--s3)' : 'var(--s4)';
+const hrDate = s => { if (!s) return '—'; const [d, t] = s.split('T'); const [y, m, dd] = d.split('-'); return `${+dd}. ${+m}. ${y}.` + (t ? ' ' + t.slice(0,5) : ''); };
+const bar = (label, v) => `<div class="bar"><span>${label}</span><span class="track"><span class="fill" style="display:block;width:${v ?? 0}%;background:${col(v)}"></span></span><span class="v">${v ?? '—'}</span></div>`;
+const secById = Object.fromEntries(D.sections.map(s => [s.id, s]));
+const secLink = id => { const s = secById[id]; return s ? `<a href="#s${id}">${esc(s.heading || s.path.join(' › '))}</a>` : id; };
+
+// Zaglavlje
+const M = D.meta, S = D.snapshot, Y = D.synthesis;
+document.getElementById('title').textContent = M.title;
+document.getElementById('srcLink').href = M.url;
+const daysLeft = Math.ceil((new Date(M.closed + 'T23:59:59') - new Date()) / 864e5);
+document.getElementById('chips').innerHTML = [
+  daysLeft >= 0 ? `<span class="chip open">Otvoreno još ${daysLeft} ${daysLeft === 1 ? 'dan' : 'dana'}</span>` : `<span class="chip">Zatvoreno</span>`,
+  `<span class="chip">Otvaranje ${hrDate(M.opened)}</span>`,
+  `<span class="chip">Zatvaranje ${hrDate(M.closed)}</span>`,
+  `<span class="chip">Izvješće ${hrDate(M.report_expected)}</span>`,
+  `<span class="chip">${M.totals.comments} komentara · ${M.totals.general} općih · ${M.totals.addition} nadopuna</span>`,
+  ...M.documents.map(d => `<a class="chip" href="dokumenti/${encodeURIComponent(d.file.split('/').pop())}">⬇ ${esc(d.name.replace(/\.docx$/,''))}</a>`),
+].join('');
+
+// Pregled
+const authors = {};
+D.sections.forEach(s => s.comments.forEach(c => authors[c.author] = (authors[c.author] || 0) + 1));
+const topAuthors = Object.entries(authors).sort((a, b) => b[1] - a[1]);
+const listOf = (arr, f) => arr && arr.length ? `<ul>${arr.map(f).join('')}</ul>` : '';
+document.getElementById('overview').innerHTML = S ? `
+  <div class="card scorebox">
+    <div class="muted" style="font-size:13px">Ukupna ocjena dokumenta</div>
+    <div class="bigscore"><b style="color:${col(S.prosjek.ukupno_tezinski)}">${S.prosjek.ukupno_tezinski}</b><span class="muted">/ 100</span></div>
+    <div class="muted" style="font-size:12px">težinski prosjek po duljini teksta · obični prosjek dijelova ${S.prosjek.ukupno}</div>
+    <div class="bars">${CRIT.map(([k, l]) => bar(l, S.prosjek[k])).join('')}</div>
+    <div class="snapmeta">
+      Analizu izradio model <b>${esc(S.model)}</b><br>
+      ${hrDate(S.izradjeno)} · ${S.komentara} komentara · ${S.dijelova} dijelova<br>
+      otisak teksta <code>${esc(S.otisak_teksta)}</code> · <a href="https://github.com/domovinatv/esavjetovanja/blob/main/analiza/METODOLOGIJA.md">metodologija v${S.metodologija}</a>
+    </div>
+  </div>
+  <div class="card synth">
+    ${Y ? `
+      <h2>Što ovaj dokument jest, ukratko</h2>
+      <p class="serif" style="font-size:18px">${esc(Y.sazetak)}</p>
+      <p>${esc(Y.ocjena_komentar)}</p>
+      <h3>Glavni nalazi</h3>${listOf(Y.glavni_nalazi, x => `<li>${esc(x)}</li>`)}
+      <div class="cols">
+        <div><h3>Najrazrađeniji dijelovi</h3>${listOf(Y.jaci_dijelovi, x => `<li>${secLink(x.section_id)}: ${esc(x.zasto)}</li>`)}</div>
+        <div><h3>Najslabiji dijelovi</h3>${listOf(Y.slabiji_dijelovi, x => `<li>${secLink(x.section_id)}: ${esc(x.zasto)}</li>`)}</div>
+      </div>
+      <h3>Što nedostaje</h3>${listOf(Y.sto_nedostaje, x => `<li>${esc(x)}</li>`)}
+      <h3>Komentari javnosti</h3><p>${esc(Y.komentari)}</p>
+      <h3>Gdje bi novi komentar najviše pomogao</h3>${listOf(Y.gdje_komentirati, x => `<li>${secLink(x.section_id)}: ${esc(x.zasto)}</li>`)}
+    ` : `<h2>Sinteza</h2><p class="muted">Sinteza dokumenta još nije izrađena.</p>`}
+    <h3>Tko komentira</h3>
+    <p>${topAuthors.length} autora. ${topAuthors.map(([a, n]) => `${esc(a)} (${n})`).join(', ')}.</p>
+  </div>` : `<div class="card synth"><p class="muted">Analiza još nije izrađena.</p></div>`;
+
+// Karta
+const chapters = [];
+D.sections.forEach(s => { const k = s.path[0]; let c = chapters.find(c => c.k === k); if (!c) chapters.push(c = {k, s: []}); c.s.push(s); });
+document.getElementById('heat').innerHTML = chapters.map(c => {
+  const sc = c.s.map(s => s.analysis?.ukupno).filter(v => v != null);
+  const avg = sc.length ? Math.round(sc.reduce((a, b) => a + b, 0) / sc.length) : null;
+  const nc = c.s.reduce((a, s) => a + s.comments.length, 0);
+  return `<div class="heatrow"><a href="#s${c.s[0].id}">${esc(c.k)}</a>
+    <span class="cells">${c.s.map(s => `<a class="cell${s.comments.length ? ' c' : ''}" href="#s${s.id}" title="${esc(s.heading)} · ocjena ${s.analysis?.ukupno ?? '—'} · komentara ${s.comments.length}" style="background:${col(s.analysis?.ukupno)}"></a>`).join('')}</span>
+    <span class="v" style="text-align:right;font-weight:600;color:${col(avg)}" title="${nc} komentara">${avg ?? '—'}</span></div>`;
+}).join('');
+
+// Sadržaj
+document.getElementById('toc').innerHTML = D.sections.map(s =>
+  `<a href="#s${s.id}" class="l${Math.max(s.level ?? 1, 1)}" data-id="${s.id}"><span class="dot" style="background:${col(s.analysis?.ukupno)}"></span><span>${esc(s.heading)}</span><span class="n">${s.comments.length || ''}</span></a>`).join('');
+
+// Dijelovi
+function sectionHTML(s) {
+  const a = s.analysis, v = a?.ukupno;
+  const cm = s.comments.map(c => {
+    const e = a?.komentari?.find(x => x.comment_id === c.id);
+    return `<div class="cm">
+      <div class="cmhead"><span class="who">${esc(c.author)}</span><span class="tag">${esc(c.type)}</span>${e ? `<span class="tag">${esc(CVRSTA[e.vrsta] || e.vrsta)}</span><span class="tag">${esc(e.tema)}</span>` : ''}<span class="muted">${hrDate(c.datetime)}</span>${c.likes || c.dislikes ? `<span class="muted">👍 ${c.likes} 👎 ${c.dislikes}</span>` : ''}</div>
+      ${e ? `<div style="margin-top:6px">${esc(e.sazetak)}</div>
+      <div class="cmeval"><span class="pill" style="background:${col(e.utemeljenost)}" title="Koliko je primjedba utemeljena u odnosu na tekst">${e.utemeljenost}</span><span class="why"><b>Procjena modela:</b> ${esc(e.ocjena_modela)}</span></div>` : ''}
+      <details><summary>Cijeli komentar</summary><div class="cmtext">${esc(c.text)}</div></details>
+    </div>`;
+  }).join('');
+  return `<article class="card sec" id="s${s.id}" style="border-left-color:${col(v)}">
+    <div class="crumbs">${esc(s.path.slice(0, -1).join(' › '))}</div>
+    <div class="sechead"><h2>${esc(s.heading)}</h2>${a ? `<span class="pill" style="background:${col(v)}">${v ?? '—'}<small>od 100</small></span>` : ''}</div>
+    ${a ? `<div style="margin-top:6px"><span class="tag">${esc(VRSTA[a.vrsta] || a.vrsta)}</span><span class="tag">${s.chars.toLocaleString('hr')} znakova</span>${s.comments.length ? `<span class="tag">${s.comments.length} komentara</span>` : ''}</div>
+    <div class="summary"><b>Ukratko</b>${esc(a.sazetak)}</div>
+    ${v != null ? `<div class="minibars">${CRIT.map(([k, l]) => bar(l, a.ocjene[k])).join('')}</div><p class="why">${esc(a.obrazlozenje)}</p>` : ''}
+    ${a.kljucne_tvrdnje?.length ? `<h4>Ključne tvrdnje</h4>${listOf(a.kljucne_tvrdnje, x => `<li>${esc(x)}</li>`)}` : ''}
+    ${a.obveze?.length ? `<h4>Obveze u tekstu</h4><div class="tablewrap"><table class="obv"><tr><th>Što</th><th>Tko</th><th>Do kada</th><th>Iznos</th></tr>${a.obveze.map(o => `<tr><td>${esc(o.sto)}</td><td>${esc(o.tko ?? '—')}</td><td>${esc(o.do_kada ?? '—')}</td><td>${esc(o.iznos ?? '—')}</td></tr>`).join('')}</table></div>` : ''}
+    ${a.slabosti?.length || a.otvorena_pitanja?.length ? `<div class="cols"><div>${a.slabosti?.length ? `<h4>Slabosti</h4>${listOf(a.slabosti, x => `<li>${esc(x)}</li>`)}` : ''}</div><div>${a.otvorena_pitanja?.length ? `<h4>Otvorena pitanja</h4>${listOf(a.otvorena_pitanja, x => `<li>${esc(x)}</li>`)}` : ''}</div></div>` : ''}` : ''}
+    ${s.html ? `<details class="orig"${a ? '' : ' open'}><summary>Izvorni tekst dijela</summary><div class="origtext">${s.html}</div></details>` : ''}
+    ${s.comments.length ? `<div class="comments"><h4>Komentari (${s.comments.length})</h4>${a?.komentari_sinteza ? `<p class="why">${esc(a.komentari_sinteza)}</p>` : ''}${cm}</div>` : ''}
+  </article>`;
+}
+const box = document.getElementById('sections');
+box.innerHTML = D.sections.map(sectionHTML).join('');
+
+// Filtri i pretraga
+let mode = 'all';
+const searchIndex = Object.fromEntries(D.sections.map(s => [s.id, (s.heading + ' ' + s.html.replace(/<[^>]+>/g, ' ') + ' ' + s.comments.map(c => c.author + ' ' + c.text).join(' ') + ' ' + JSON.stringify(s.analysis || '')).toLowerCase()]));
+function apply() {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  let list = D.sections.slice();
+  if (mode === 'weak') list.sort((a, b) => (a.analysis?.ukupno ?? 999) - (b.analysis?.ukupno ?? 999));
+  list.forEach(s => {
+    const el = document.getElementById('s' + s.id);
+    const show = (mode !== 'comments' || s.comments.length) && (!q || searchIndex[s.id].includes(q)) && !(mode === 'weak' && s.analysis?.ukupno == null);
+    el.classList.toggle('hidden', !show);
+    box.appendChild(el);
+  });
+}
+document.querySelectorAll('.filters button').forEach(b => b.onclick = () => {
+  mode = b.dataset.f;
+  document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  apply();
+});
+let t; document.getElementById('q').oninput = () => { clearTimeout(t); t = setTimeout(apply, 150); };
+
+// Označi trenutni dio u sadržaju
+const tocLinks = Object.fromEntries([...document.querySelectorAll('#toc a')].map(a => [a.dataset.id, a]));
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if (e.isIntersecting) { Object.values(tocLinks).forEach(a => a.classList.remove('active')); const a = tocLinks[e.target.id.slice(1)]; if (a) { a.classList.add('active'); a.scrollIntoView({block: 'nearest'}); } }
+}), {rootMargin: '0px 0px -70% 0px'});
+document.querySelectorAll('.sec').forEach(el => io.observe(el));
+
+document.getElementById('foot').innerHTML = `Tekst i komentari preuzeti s <a href="${M.url}">esavjetovanja.gov.hr</a> ${hrDate(M.scraped_at.slice(0,16))} UTC.
+  Komentare portal javno objavljuje s imenom autora. Ocjene i sažeci su automatska analiza jezičnog modela i mogu sadržavati pogreške; mjerodavan je izvorni tekst.
+  Ovo nije službena stranica Vlade Republike Hrvatske. Kod i podaci: <a href="https://github.com/domovinatv/esavjetovanja">github.com/domovinatv/esavjetovanja</a>.`;
+</script>
+</body>
+</html>

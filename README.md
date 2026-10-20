@@ -10,7 +10,20 @@ nudi nikakav izvoz. Zato je teško odgovoriti na jednostavna pitanja: tko je
 komentirao, koliko, na koje dijelove teksta i što je predložio.
 
 Ovaj repozitorij preuzima cijelo savjetovanje u otvorene formate (JSONL,
-Markdown i izvorni .docx), da se može čitati, pretraživati i analizirati.
+Markdown i izvorni .docx), na njega pušta jezični model da ga analizira dio po
+dio, i sve to objavljuje kao jednu stranicu koja se može čitati:
+**[esavjetovanje.domovina.ai](https://esavjetovanje.domovina.ai)**.
+
+Na stranici je za svaki dio dokumenta:
+
+- sažetak jednostavnim jezikom: što taj dio stvarno kaže
+- ocjena 0–100 po pet kriterija (konkretnost, mjerljivost, utemeljenost, provedivost, jasnoća)
+- obveze iz teksta (što, tko, do kada, koliko novca), slabosti i otvorena pitanja
+- izvorni tekst
+- javni komentari, svaki s procjenom modela koliko je primjedba utemeljena
+
+Na vrhu je sinteza cijelog dokumenta, karta dokumenta obojena po ocjenama i
+popis mjesta gdje bi novi komentar najviše pomogao.
 
 ## Preuzeta savjetovanja
 
@@ -35,6 +48,10 @@ uv run esavjetovanja scrape 10346
 
 # izradi Markdown izvještaj: statistika, autori, poglavlja, svi komentari uz izvorni tekst
 uv run esavjetovanja report 10346
+
+# izgradi stranicu u site/ (uzima zadnji snapshot analize) i objavi je na Cloudflare
+uv run esavjetovanja site 10346
+npx wrangler deploy
 ```
 
 Nemaš Chrome? Koristi Playwrightov Chromium:
@@ -64,7 +81,13 @@ data/savjetovanja/<id>/
 ├── sections.jsonl   dijelovi dokumenta, jedan po retku
 ├── comments.jsonl   komentari, jedan po retku
 ├── documents/       dokument savjetovanja i ostali prilozi (.docx)
-└── README.md        izvještaj (esavjetovanja report)
+├── README.md        izvještaj (esavjetovanja report)
+└── analize/
+    └── <datum>_<model>/     jedan snapshot analize
+        ├── dijelovi/*.jsonl  izlaz modela po skupinama poglavlja
+        ├── analiza.jsonl     spojeno, s izračunatom ukupnom ocjenom
+        ├── dokument.json     sinteza cijelog dokumenta
+        └── snapshot.json     model, vrijeme, broj komentara, otisak teksta, prosjeci
 ```
 
 **`sections.jsonl`**
@@ -96,6 +119,25 @@ data/savjetovanja/<id>/
 Na kraju svakog preuzimanja alat usporedi broj preuzetih komentara s brojem
 koji navodi portal i upozori ako se razlikuju.
 
+## Analiza
+
+Pravila po kojima model ocjenjuje opisana su u
+[analiza/METODOLOGIJA.md](analiza/METODOLOGIJA.md): jedinica analize, kriteriji,
+sidra ljestvice 0–100 i ograničenja. Ukupnu ocjenu računa kod (prosjek
+kriterija), ne model.
+
+Svaka analiza je **snapshot**: zna se koji ju je model izradio, kada, nad
+koliko komentara i nad kojom verzijom teksta (otisak `otisak_teksta`). Kad
+stignu novi komentari ili se tekst promijeni, radi se novi snapshot, a stari
+ostaje u povijesti za usporedbu.
+
+| Snapshot | Model | Komentara | Ocjena |
+|---|---|---:|---:|
+| [2026-10-20](data/savjetovanja/10346/analize/2026-10-20_claude-opus-5-5/) | claude-opus-5-5 | 79 | 44 |
+
+Ocjene su mišljenje jezičnog modela, ne službena ocjena dokumenta. Mjerodavan
+je izvorni tekst na portalu.
+
 ## Kako radi
 
 e-Savjetovanja je [Blazor Server](https://learn.microsoft.com/aspnet/core/blazor/)
@@ -114,9 +156,11 @@ drugim, otprilike brzinom kojom bi stranicu pregledavao čovjek.
 
 - [x] preuzimanje jednog savjetovanja: tekst, komentari, dokumenti
 - [x] Markdown izvještaj po savjetovanju
-- [ ] katalog svih savjetovanja (~9 300) s institucijom, stanjem i datumima
-- [ ] objavljena izvješća o savjetovanju: prihvaćeni i odbijeni komentari s obrazloženjem
-- [ ] analiza: teme, grupiranje sličnih komentara, sažetak po poglavlju, praćenje što je ušlo u konačni tekst
+- [x] LLM analiza po dijelovima dokumenta, snapshot s modelom i vremenom
+- [x] stranica esavjetovanje.domovina.ai
+- [ ] novi snapshot kad stignu novi komentari, usporedba snapshota
+- [ ] objavljeno izvješće o savjetovanju: prihvaćeni i odbijeni komentari s obrazloženjem
+- [ ] usporedba nacrta i konačnog teksta: što je od komentara ušlo u dokument
 
 Prijedlozi i pull requestovi su dobrodošli, vidi [CONTRIBUTING.md](CONTRIBUTING.md).
 
