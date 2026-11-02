@@ -51,4 +51,4 @@ zadrži stari popis).
   promijenjene dijelove (usporedba `otisak_teksta`), diff prema prethodnom
   snapshotu, prikaz povijesti na stranici.
 - Pomoć korisniku u pisanju vlastitih komentara (popis `gdje_komentirati`).
-- Prompt za agente premjestiti u repo (`analiza/prompt.md`) radi ponovljivosti.
+- ~~Prompt za agente premjestiti u repo~~ napravljeno 2026-11-02 (`analiza/prompt.md`), vidi [2026-11-02-drugo-savjetovanje-inkrementalni-snapshot.md](2026-11-02-drugo-savjetovanje-inkrementalni-snapshot.md).

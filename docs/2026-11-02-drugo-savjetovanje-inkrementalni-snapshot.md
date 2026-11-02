@@ -43,3 +43,22 @@ potrošili su oko 93–96k tokena i 8 poziva alata, za otprilike 3 minute, što 
 - Stari linkovi iz vremena kad je na `/` bilo samo 10346 i dalje rade: `/#s<id>` JS preusmjerava na
   `/10346/#s<id>`, a `/dokumenti/*` preusmjerava `_redirects` (301).
 - `site` briše cijeli `site/` prije gradnje.
+
+## Otvoreno
+
+- Oba savjetovanja zatvaraju se 15.11.2026. Prije toga treba ih još jednom preuzeti
+  (`scrape 10346 10347`), jer komentari obično stižu pred zatvaranje. Za 10346 zatim slijedi
+  inkrementalni snapshot (postupak gore); za 10347 isto, s prvim snapshotom kao `--base`.
+- Nalaze agenata za 10347 provjerio sam samo uzorkom: mjera 12 (10 naspram 5 mil.) i mjera 3
+  (15,99 mil. za BrAIn naspram 8,8 mil.) odgovaraju tekstu. Ostale tvrdnje iz
+  `dokument.json` / `gdje_komentirati` treba provjeriti u izvorniku prije nego što se citiraju
+  u komentaru na portalu.
+- Pomoć u pisanju komentara za mjesta iz `gdje_komentirati` (oba dokumenta). Komentari na
+  portal idu samo stručni; tako je dogovoreno na sjednici Savjeta MOST-a 2.11.
+- Komentar Velibora Božića na 10346 je samo poveznica na Google Doc, pa nije ocijenjen.
+- Na `/` ostaje i stari `/dokumenti/*` iz prijašnjeg deploya (vraća 200, a ne 301 iz
+  `_redirects`); nije štetno.
+
+## Vezani dokumenti
+
+- [2026-10-20-portal-analiza-deploy.md](2026-10-20-portal-analiza-deploy.md): portal, prva analiza, deploy
