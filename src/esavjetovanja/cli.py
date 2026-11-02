@@ -26,9 +26,10 @@ def main(argv: list[str] | None = None) -> None:
     m.add_argument("snapshot", help="mapa snapshota, npr. 2026-10-20_claude-opus-5-5")
     m.add_argument("--model", required=True, help="naziv modela, npr. claude-opus-5-5")
     m.add_argument("--created-at", required=True, help="vrijeme izrade analize, ISO 8601")
+    m.add_argument("--base", help="snapshot iz kojeg su prenesene ocjene nepromijenjenih dijelova")
 
-    w = sub.add_parser("site", help="izgradi statičnu stranicu za savjetovanje")
-    w.add_argument("id", type=int)
+    w = sub.add_parser("site", help="izgradi statičnu stranicu: /<id>/ za svako savjetovanje i popis na /")
+    w.add_argument("ids", nargs="+", type=int)
     w.add_argument("--out", type=Path, default=Path("site"))
 
     args = parser.parse_args(argv)
@@ -51,11 +52,11 @@ def main(argv: list[str] | None = None) -> None:
         from .analysis import merge_snapshot
         folder = args.data_dir / "savjetovanja" / str(args.id)
         snap = merge_snapshot(folder, folder / "analize" / args.snapshot,
-                              model=args.model, created_at=args.created_at)
+                              model=args.model, created_at=args.created_at, base=args.base)
         print(json.dumps(snap, ensure_ascii=False, indent=2))
     elif args.cmd == "site":
         from .site import build_site
-        print(build_site(args.data_dir / "savjetovanja" / str(args.id), args.out))
+        print(build_site([args.data_dir / "savjetovanja" / str(i) for i in args.ids], args.out))
 
 
 if __name__ == "__main__":

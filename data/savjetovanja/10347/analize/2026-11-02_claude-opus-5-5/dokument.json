@@ -1,0 +1,104 @@
+{
+  "sazetak": "Akcijski plan za razdoblje 2026.–2028. razrađuje prvi dio Nacionalnog plana u 33 mjere po četiri posebna cilja, s procijenjenim troškom od 382.077.068 eura: najviše za istraživanje, inovacije i gospodarstvo (207,4 mil.) te računalnu infrastrukturu i podatke (138,9 mil.), a najmanje za etičnu i zakonitu primjenu (11,7 mil.). Za razliku od Nacionalnog plana, gotovo svaka mjera ima nositelja, kvartalne ključne točke, iznos i pokazatelje rezultata.",
+  "ocjena_komentar": "Ukupno 48/100 (težinski po duljini teksta), osjetno više od Nacionalnog plana (44), uz mjerljivost 43 (19 u Nacionalnom planu) i provedivost 47 (25). Mjere su operativno složene, ali ih brojne unutarnje nedosljednosti i slabo obrazloženje (utemeljenost 35) drže u sredini ljestvice: iznosi i izvori u tekstu i tablicama se ne slažu, rokovi su ponegdje obrnutim redom ili izvan razdoblja plana, a pokazatelji uglavnom broje aktivnosti, ne učinak.",
+  "glavni_nalazi": [
+    "Iznosi i izvori financiranja u opisu mjere i u tablici se ne slažu kod više mjera: mjera 3 (za projekt BrAIn navedeno je 15.993.222 EUR, 85 % iz ESF+, a u tablici je trošak mjere 8.804.493 EUR iz državnog proračuna, bez objašnjenja razlike), mjera 8 (48,06 mil. EFRR naspram 46,89 mil. proračuna), mjera 12 (do 10 mil. naspram 5 mil.), mjera 13 (2,6 naspram 5,2 mil.).",
+    "Rokovi su ponegdje logički nemogući ili izvan razdoblja plana: ključne točke prije početka provedbe (mjere 22 i 32), programi vaučera tek u Q1 2029. uz ciljeve za 2028. (mjera 5), novi pozivi za istraživanje u Q3 2029. (mjera 17).",
+    "Financijski okvir od 382 mil. eura ne razdvaja osigurana od uvjetnih sredstava ni po godinama ni po izvorima; uvod sam kaže da će se iznosi potvrditi kroz proračun, VFO i NRPP, a mjera 33 uopće nema trošak.",
+    "Pokazatelji rezultata većinom broje aktivnosti (polaznici, radionice, dokumenti), a ne učinak; nekoliko sektorskih mjera ima ciljnu vrijednost 0 za 2028. (mjere 27 i 29), a pokazatelj ishoda 2.1 je 100 % od početka do kraja.",
+    "Obuhvat je malen u odnosu na ciljeve ishoda: 7.000 građana u programima pismenosti ne može bitno pomaknuti udio stanovništva s osnovnim digitalnim vještinama s 63 % na 71 %, a 447.000 EUR za 10.000 nastavnika je oko 45 EUR po nastavniku.",
+    "Najveće pojedinačne stavke najslabije su obrazložene: IPCEI AI (najmanje 115 mil. EUR) nema kriterije nacionalne selekcije, UI tvornica (39 mil.) ima samo pokazatelj postojanja kataloga usluga, a hrvatski jezični model nema mjerila kvalitete ni obvezu otvorene licence.",
+    "Upravljanje provedbom nema rok za uspostavu praćenja, učestalost ni javnu objavu izvješća, ni evaluaciju prije sljedećeg akcijskog plana; Posebni ciljevi 3 i 4 nemaju vlastiti pokazatelj ishoda u uvodu cilja, a sektorske mjere pokrivaju manji dio područja Nacionalnog plana bez roka za ostala."
+  ],
+  "jaci_dijelovi": [
+    {
+      "section_id": 1034093,
+      "zasto": "ocjena kolnika: kilometri po fazama, tehnički parametri, rokovi i pokazatelj pokrivenosti (65)"
+    },
+    {
+      "section_id": 1034055,
+      "zasto": "pokazatelji ishoda s polaznim vrijednostima i godišnjim ciljevima (60)"
+    },
+    {
+      "section_id": 1034080,
+      "zasto": "vaučeri za MSP: konkretne prihvatljive aktivnosti i kvartalni slijed (57)"
+    },
+    {
+      "section_id": 1034086,
+      "zasto": "poluvodiči: poznat konzorcij, točan iznos i izvor, provjerljivi pokazatelji (57)"
+    },
+    {
+      "section_id": 1034067,
+      "zasto": "kibernetička sigurnost: pune tablice, kvartalni rokovi i pet pokazatelja (55)"
+    }
+  ],
+  "slabiji_dijelovi": [
+    {
+      "section_id": 1034058,
+      "zasto": "Posebni cilj 1: mjere za talente i napredne stručnjake odgođene bez roka i nositelja (29)"
+    },
+    {
+      "section_id": 1034094,
+      "zasto": "policija: nema izvora sredstava do 2028., ključne točke prije početka provedbe (31)"
+    },
+    {
+      "section_id": 1034095,
+      "zasto": "kultura i mediji: samo radna skupina i jedno izvješće, bez troška (31)"
+    },
+    {
+      "section_id": 1034073,
+      "zasto": "Posebni cilj 3: bez pokazatelja ishoda, uloga regulatora uvjetna do donošenja zakona (31)"
+    },
+    {
+      "section_id": 1034083,
+      "zasto": "GovTech: prepisan odlomak iz mjere 23, proturječni rokovi, pokazatelji kao rasponi (37)"
+    }
+  ],
+  "sto_nedostaje": [
+    "raspodjela troška po godinama i po izvorima te razdvajanje osiguranih od uvjetnih sredstava",
+    "usklađenost iznosa i izvora između opisa mjera i tablica",
+    "pokazatelji učinka (ušteda vremena, točnost, zadovoljstvo korisnika) uz pokazatelje aktivnosti",
+    "rok, učestalost i javna objava izvješća o provedbi te evaluacija prije sljedećeg akcijskog plana",
+    "kriteriji odabira mjera i rok za sektorske mjere u zdravstvu, energetici, poljoprivredi, industriji i turizmu",
+    "mjerila kvalitete i licenca za hrvatski jezični model; kriteriji selekcije za IPCEI AI"
+  ],
+  "komentari": "Do snapshota je stiglo 12 komentara od 4 autora (jedan pojedinac poslao je 6). Model je 11 svrstao u prijedloge izmjene i jedan u kritiku; prosječna utemeljenost je oko 77. Najutemeljeniji su oni koji pogađaju unutarnje nedosljednosti (rokovi i ciljevi vaučera u mjeri 5) i provjerljivost: pokazatelj djelotvornog ljudskog nadzora u mjeri 15, javno praćenje financiranja i javni registar UI sustava, postupovna prava korisnika e-Građana i navođenje izvora u odgovorima carinskog savjetnika. Većina mjera, uključujući najveće stavke (UI tvornica, IPCEI AI, jezični model), još nema nijedan komentar.",
+  "gdje_komentirati": [
+    {
+      "section_id": 1034056,
+      "zasto": "trošak: nema raspodjele po godinama i izvorima ni razdvajanja osiguranog od uvjetnog; mjera 33 bez troška"
+    },
+    {
+      "section_id": 1034053,
+      "zasto": "upravljanje: nema roka, učestalosti ni javne objave izvješća o napretku"
+    },
+    {
+      "section_id": 1034084,
+      "zasto": "IPCEI AI: najmanje 115 mil. EUR bez obrazloženja iznosa i javnih kriterija selekcije"
+    },
+    {
+      "section_id": 1034070,
+      "zasto": "UI tvornica: 39 mil. EUR, a jedini pokazatelj je postojanje kataloga usluga"
+    },
+    {
+      "section_id": 1034072,
+      "zasto": "HR jezični model: nema mjerila kvalitete, licence ni plana ako europski poziv ne prođe; iznos 2,6 naspram 5,2 mil."
+    },
+    {
+      "section_id": 1034071,
+      "zasto": "gigatvornica: do 10 ili 5 mil. EUR, bez izvora za 2026.–2027."
+    },
+    {
+      "section_id": 1034061,
+      "zasto": "UI u školama: tekst i tablica navode različit iznos i izvor; nema zaštite podataka učenika"
+    },
+    {
+      "section_id": 1034074,
+      "zasto": "provedba Akta o UI-ju: koje tijelo nadzire tržište i tko postupa po zabranjenim praksama"
+    },
+    {
+      "section_id": 1034094,
+      "zasto": "policija: izvor sredstava do 2028., javna evaluacija pilota i vanjski nadzor"
+    }
+  ]
+}

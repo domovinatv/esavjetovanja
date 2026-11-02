@@ -47,6 +47,8 @@ header.top .wrap { display: flex; align-items: center; justify-content: space-be
 .hero h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(24px, 3.4vw, 38px); margin: 0 0 12px; max-width: 980px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; }
 .chip { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+.tag.new { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.hist { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
 .chip.open { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
 
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
@@ -83,7 +85,8 @@ header.top .wrap { display: flex; align-items: center; justify-content: space-be
 @media (max-width: 600px) { .heatrow { grid-template-columns: 1fr 40px; } .heatrow .cells { grid-column: 1 / -1; grid-row: 2; } }
 
 .layout { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; margin-top: 8px; }
-@media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } .toc { display: none; } }
+@media (max-width: 1000px) { .layout { grid-template-columns: minmax(0, 1fr); } .toc { display: none; } }
+.layout > div { min-width: 0; }
 .toc { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; padding: 12px; font-size: 13px; }
 .toc a { display: flex; gap: 8px; align-items: flex-start; padding: 4px 6px; border-radius: 6px; color: var(--text); text-decoration: none; }
 .toc a:hover, .toc a.active { background: var(--surface-2); }
@@ -137,8 +140,8 @@ footer { margin: 40px 0; font-size: 13px; color: var(--muted); }
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="brand" href="#">esavjetovanje<span>.</span>domovina.ai</a>
-  <nav><a href="#pregled">Pregled</a><a href="#karta">Karta</a><a href="#dokument">Dokument</a><a id="srcLink" href="#">Izvornik</a><a href="https://github.com/domovinatv/esavjetovanja">GitHub</a></nav>
+  <a class="brand" href="/">esavjetovanje<span>.</span>domovina.ai</a>
+  <nav><a href="/">Sva savjetovanja</a><a href="#pregled">Pregled</a><a href="#karta">Karta</a><a href="#dokument">Dokument</a><a id="srcLink" href="#">Izvornik</a><a href="https://github.com/domovinatv/esavjetovanja">GitHub</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -166,6 +169,7 @@ footer { margin: 40px 0; font-size: 13px; color: var(--muted); }
       <div class="filters" role="group" aria-label="Filtri">
         <button data-f="all" aria-pressed="true">Svi dijelovi</button>
         <button data-f="comments" aria-pressed="false">S komentarima</button>
+        <button data-f="new" aria-pressed="false" id="fNew" hidden>Novi komentari</button>
         <button data-f="weak" aria-pressed="false">Najslabiji prvo</button>
         <input id="q" type="search" placeholder="Traži u tekstu i komentarima…">
       </div>
@@ -203,6 +207,16 @@ document.getElementById('chips').innerHTML = [
   ...M.documents.map(d => `<a class="chip" href="dokumenti/${encodeURIComponent(d.file.split('/').pop())}">⬇ ${esc(d.name.replace(/\.docx$/,''))}</a>`),
 ].join('');
 
+// Povijest snapshotova
+const H = D.history || [], P = H.length > 1 ? H[H.length - 2] : null;
+const nNew = D.sections.reduce((n, s) => n + s.comments.filter(c => c.new).length, 0);
+const HIST = P ? `<div class="hist"><b>Promjene od ${hrDate(P.izradjeno.slice(0,10))}</b><br>
+  ${nNew ? `<a href="#dokument" onclick="document.getElementById('fNew').click()">${nNew} ${nNew === 1 ? 'novi komentar' : 'novih komentara'}</a>` : 'nema novih komentara'} (${P.komentara} → ${S.komentara}) ·
+  ${P.otisak_teksta === S.otisak_teksta ? 'tekst nepromijenjen' : '<b>tekst se promijenio</b>'} ·
+  ocjena ${P.prosjek.ukupno_tezinski} → ${S.prosjek.ukupno_tezinski}
+  ${S.osnova ? '<br><span class="muted">ocjene nepromijenjenih dijelova prenesene iz prethodnog snapshota</span>' : ''}</div>` : '';
+if (nNew) document.getElementById('fNew').hidden = false;
+
 // Pregled
 const authors = {};
 D.sections.forEach(s => s.comments.forEach(c => authors[c.author] = (authors[c.author] || 0) + 1));
@@ -218,6 +232,7 @@ document.getElementById('overview').innerHTML = S ? `
       Analizu izradio model <b>${esc(S.model)}</b><br>
       ${hrDate(S.izradjeno)} · ${S.komentara} komentara · ${S.dijelova} dijelova<br>
       otisak teksta <code>${esc(S.otisak_teksta)}</code> · <a href="https://github.com/domovinatv/esavjetovanja/blob/main/analiza/METODOLOGIJA.md">metodologija v${S.metodologija}</a>
+      ${HIST}
     </div>
   </div>
   <div class="card synth">
@@ -260,9 +275,9 @@ function sectionHTML(s) {
   const cm = s.comments.map(c => {
     const e = a?.komentari?.find(x => x.comment_id === c.id);
     return `<div class="cm">
-      <div class="cmhead"><span class="who">${esc(c.author)}</span><span class="tag">${esc(c.type)}</span>${e ? `<span class="tag">${esc(CVRSTA[e.vrsta] || e.vrsta)}</span><span class="tag">${esc(e.tema)}</span>` : ''}<span class="muted">${hrDate(c.datetime)}</span>${c.likes || c.dislikes ? `<span class="muted">👍 ${c.likes} 👎 ${c.dislikes}</span>` : ''}</div>
+      <div class="cmhead"><span class="who">${esc(c.author)}</span>${c.new ? '<span class="tag new">novo</span>' : ''}<span class="tag">${esc(c.type)}</span>${e ? `<span class="tag">${esc(CVRSTA[e.vrsta] || e.vrsta)}</span><span class="tag">${esc(e.tema)}</span>` : ''}<span class="muted">${hrDate(c.datetime)}</span>${c.likes || c.dislikes ? `<span class="muted">👍 ${c.likes} 👎 ${c.dislikes}</span>` : ''}</div>
       ${e ? `<div style="margin-top:6px">${esc(e.sazetak)}</div>
-      <div class="cmeval"><span class="pill" style="background:${col(e.utemeljenost)}" title="Koliko je primjedba utemeljena u odnosu na tekst">${e.utemeljenost}</span><span class="why"><b>Procjena modela:</b> ${esc(e.ocjena_modela)}</span></div>` : ''}
+      <div class="cmeval"><span class="pill" style="background:${col(e.utemeljenost)}" title="Koliko je primjedba utemeljena u odnosu na tekst">${e.utemeljenost ?? '—'}</span><span class="why"><b>Procjena modela:</b> ${esc(e.ocjena_modela)}</span></div>` : ''}
       <details><summary>Cijeli komentar</summary><div class="cmtext">${esc(c.text)}</div></details>
     </div>`;
   }).join('');
@@ -291,7 +306,7 @@ function apply() {
   if (mode === 'weak') list.sort((a, b) => (a.analysis?.ukupno ?? 999) - (b.analysis?.ukupno ?? 999));
   list.forEach(s => {
     const el = document.getElementById('s' + s.id);
-    const show = (mode !== 'comments' || s.comments.length) && (!q || searchIndex[s.id].includes(q)) && !(mode === 'weak' && s.analysis?.ukupno == null);
+    const show = (mode !== 'comments' || s.comments.length) && (mode !== 'new' || s.comments.some(c => c.new)) && (!q || searchIndex[s.id].includes(q)) && !(mode === 'weak' && s.analysis?.ukupno == null);
     el.classList.toggle('hidden', !show);
     box.appendChild(el);
   });

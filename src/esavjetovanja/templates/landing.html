@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Savjetovanja o umjetnoj inteligenciji · analiza</title>
+<meta name="description" content="Javna savjetovanja o umjetnoj inteligenciji na e-Savjetovanjima: tekst, komentari i analiza jezičnog modela po dijelovima.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+// stari linkovi /#s<id> vodili su na savjetovanje koje je bilo na naslovnoj
+if (/^#s\d+$/.test(location.hash)) location.replace('/10346/' + location.hash);
+</script>
+<style>
+:root {
+  --bg: #f7f6f2; --surface: #ffffff; --surface-2: #f0eee8; --text: #1d1d1b; --muted: #66645e;
+  --line: #e2dfd6; --accent: #b3261e; --accent-soft: #fbeae8; --link: #1f4e8c;
+  --s0: #c0392b; --s1: #e67e22; --s2: #d4ac0d; --s3: #6aa84f; --s4: #2e7d32; --snull: #b9b6ad;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151514; --surface: #1e1e1c; --surface-2: #272724; --text: #ecebe6; --muted: #a3a097;
+    --line: #34332f; --accent: #ef6b62; --accent-soft: #3a2422; --link: #8fb4ec;
+    --s0: #e0675b; --s1: #ee9a4f; --s2: #e3c34d; --s3: #8cc474; --s4: #5cb860; --snull: #5d5b55;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151514; --surface: #1e1e1c; --surface-2: #272724; --text: #ecebe6; --muted: #a3a097;
+  --line: #34332f; --accent: #ef6b62; --accent-soft: #3a2422; --link: #8fb4ec;
+  --s0: #e0675b; --s1: #ee9a4f; --s2: #e3c34d; --s3: #8cc474; --s4: #5cb860; --snull: #5d5b55;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Inter, system-ui, sans-serif; }
+a { color: var(--link); }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+header.top { border-bottom: 1px solid var(--line); background: var(--surface); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; }
+.brand { font-weight: 700; text-decoration: none; color: var(--text); }
+.brand span { color: var(--accent); }
+nav { display: flex; gap: 14px; font-size: 14px; }
+h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(26px, 4vw, 38px); margin: 32px 0 8px; line-height: 1.2; }
+.lead { color: var(--muted); max-width: 720px; margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin-bottom: 16px; display: grid; grid-template-columns: 96px 1fr; gap: 20px; text-decoration: none; color: inherit; }
+.card:hover { border-color: var(--muted); }
+@media (max-width: 600px) { .card { grid-template-columns: 1fr; gap: 10px; } }
+.score b { font-size: 48px; line-height: 1; font-weight: 700; display: block; }
+.score span { font-size: 12px; color: var(--muted); }
+.card h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 21px; margin: 0 0 8px; line-height: 1.3; }
+.card p { margin: 8px 0 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; }
+.chip { background: var(--surface-2); border-radius: 999px; padding: 2px 10px; }
+.chip.open, .chip.new { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.go { color: var(--link); font-weight: 600; margin-top: 10px; display: inline-block; }
+footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/">esavjetovanje<span>.</span>domovina.ai</a>
+  <nav><a href="https://github.com/domovinatv/esavjetovanja/blob/main/analiza/METODOLOGIJA.md">Metodologija</a><a href="https://github.com/domovinatv/esavjetovanja">GitHub</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Savjetovanja o umjetnoj inteligenciji</h1>
+  <p class="lead">Tekst savjetovanja s portala e-Savjetovanja, svi javni komentari i analiza jezičnog modela dio po dio: što koji dio stvarno kaže, koliko je konkretan i gdje bi novi komentar najviše pomogao.</p>
+  <div id="list"></div>
+  <footer>Ocjene i sažeci su automatska analiza jezičnog modela i mogu sadržavati pogreške; mjerodavan je izvorni tekst na <a href="https://esavjetovanja.gov.hr">esavjetovanja.gov.hr</a>. Ovo nije službena stranica Vlade Republike Hrvatske.</footer>
+</main>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const col = v => v == null ? 'var(--snull)' : v <= 20 ? 'var(--s0)' : v <= 40 ? 'var(--s1)' : v <= 60 ? 'var(--s2)' : v <= 80 ? 'var(--s3)' : 'var(--s4)';
+const hrDate = s => { const [y, m, d] = s.slice(0,10).split('-'); return `${+d}. ${+m}. ${y}.`; };
+document.getElementById('list').innerHTML = D.items.map(it => {
+  const M = it.meta, S = it.snapshot, v = S?.prosjek?.ukupno_tezinski;
+  const left = Math.ceil((new Date(M.closed + 'T23:59:59') - new Date()) / 864e5);
+  return `<a class="card" href="/${M.id}/">
+    <div class="score"><b style="color:${col(v)}">${v ?? '—'}</b><span>${S ? 'ocjena / 100' : 'analiza u izradi'}</span></div>
+    <div>
+      <h2>${esc(M.title)}</h2>
+      <div class="chips">
+        ${left >= 0 ? `<span class="chip open">Otvoreno još ${left} ${left === 1 ? 'dan' : 'dana'}</span>` : '<span class="chip">Zatvoreno</span>'}
+        <span class="chip">${hrDate(M.opened)} – ${hrDate(M.closed)}</span>
+        <span class="chip">${M.totals.comments} komentara</span>
+        ${it.new_comments ? `<span class="chip new">${it.new_comments} novih od prošle analize</span>` : ''}
+        <span class="chip">ID ${M.id}</span>
+      </div>
+      ${it.sazetak ? `<p>${esc(it.sazetak)}</p>` : ''}
+      <span class="go">Otvori analizu →</span>
+    </div>
+  </a>`;
+}).join('');
+</script>
+</body>
+</html>

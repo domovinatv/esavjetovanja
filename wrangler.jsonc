@@ -1,5 +1,5 @@
 {
-  // Statična stranica: `uv run esavjetovanja site 10346 && npx wrangler deploy`
+  // Statična stranica: `uv run esavjetovanja site 10346 10347 && npx wrangler deploy`
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "esavjetovanje",
   "account_id": "7dc7167b7e2e00923bfa7cd697df14e4",

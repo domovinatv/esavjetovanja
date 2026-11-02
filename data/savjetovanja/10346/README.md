@@ -2,18 +2,18 @@
 
 - Izvor: <https://esavjetovanja.gov.hr/Econ/10346>
 - Otvoreno: 2026-10-16 · zatvaranje: 2026-11-15 · očekivano izvješće: 2026-12-16
-- Preuzeto: 2026-10-20T20:46:33+00:00
+- Preuzeto: 2026-11-02T20:01:06+00:00
 - Dijelova dokumenta: 96
-- Komentara: 79 (portal navodi 79)
+- Komentara: 85 (portal navodi 85)
 
 ## Pregled
 
 | Vrsta | Broj |
 |---|---:|
-| Nadopuna teksta | 51 |
-| Opći komentar | 28 |
+| Nadopuna teksta | 55 |
+| Opći komentar | 30 |
 
-Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
+Različitih autora: **8**. Najaktivniji autor ima 69 od 85 komentara (81 %).
 
 ### Autori
 
@@ -21,9 +21,12 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 |---|---:|---:|---:|
 | PHI SAVJETOVANJE, OBRT ZA POSLOVNE USLUGE, VL. DOMEN VERDNIK, ZAGREB, ILICA 47 | 69 | 18 | 51 |
 | DENIS KURTAGIĆ | 5 | 5 | 0 |
+| UDRUGA ZA RAZVOJ AUDIO VIZUALNE UMJETNOSTI "METAMEDIJ" | 4 | 0 | 4 |
 | ALEKSANDAR PERC | 2 | 2 | 0 |
 | SANJIN LEVAK | 2 | 2 | 0 |
 | DANIEL RIŠAVI | 1 | 1 | 0 |
+| MLADEN MILAVIĆ | 1 | 1 | 0 |
+| VELIBOR BOŽIĆ | 1 | 1 | 0 |
 
 ### Po danima
 
@@ -33,20 +36,22 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 | 2026-10-18 | 2 |
 | 2026-10-19 | 7 |
 | 2026-10-20 | 1 |
+| 2026-10-29 | 4 |
+| 2026-10-30 | 2 |
 
 ### Po poglavljima
 
 | Poglavlje | Komentara |
 |---|---:|
-| 4. Ključna područja primjene UI-ja u Republici Hrvatskoj | 44 |
-| 3. Vizija, ciljevi i pokazatelji ishoda | 11 |
+| 4. Ključna područja primjene UI-ja u Republici Hrvatskoj | 45 |
+| 3. Vizija, ciljevi i pokazatelji ishoda | 14 |
 | 2. Uvod: strateški kontekst i analiza stanja | 10 |
 | 6. Indikativni financijski plan | 4 |
 | 7. Upravljanje provedbom | 4 |
 | 5. Mjere za provedbu posebnih ciljeva | 3 |
+| Pojmovnik | 3 |
 | NACIONALNI PLAN ZA RAZVOJ UMJETNE INTELIGENCIJE ZA RAZDOBLJE DO 2032. GODINE | 1 |
 | 1. Izvršni sažetak | 1 |
-| Pojmovnik | 1 |
 
 ## Komentari uz tekst
 
@@ -127,7 +132,7 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 
 </details>
 
-**Nadopuna teksta** — PHI SAVJETOVANJE, OBRT ZA POSLOVNE USLUGE, VL. DOMEN VERDNIK, ZAGREB, ILICA 47, 2026-10-16T17:55
+**Nadopuna teksta** — PHI SAVJETOVANJE, OBRT ZA POSLOVNE USLUGE, VL. DOMEN VERDNIK, ZAGREB, ILICA 47, 2026-10-16T17:55 · 👍 1 👎 0
 
 > Odabir primjene UI-ja temeljit će se na jasno utvrđenom problemu i usporedbi s drugim mogućim rješenjima, uključujući unapređenje poslovnih procesa, integraciju informacijskih sustava i automatizaciju bez UI-ja. Prednost će imati primjene kod kojih je moguće obrazložiti dodatnu vrijednost u odnosu na trošak, složenost i rizike. UI se neće uvoditi kao samostalni cilj niti kao zamjena za prethodno uređivanje procesa, podataka i odgovornosti.
 
@@ -588,6 +593,57 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 > U obrazovanju je potrebno razdvojiti učenje o UI-ju, korištenje UI-ja u nastavi i primjenu UI-ja pri vrednovanju učenika. Priprema nastavnika, nastavnih materijala i pravila uporabe treba prethoditi široj primjeni. Programi za javnu upravu trebaju biti povezani s konkretnim odgovornostima: od korištenja alata do odobravanja nabave, prihvata sustava i upravljanja rizicima.
 > Pokazatelje uporabe alata predlažem dopuniti praktičnim provjerama kompetencija i praćenjem primjene stečenog znanja. Uporaba generativnog UI-ja nije sama po sebi dokaz stručnosti ili odgovornog postupanja. Pokazatelj profesionalne uporabe među stanovništvom od 16 do 74 godine potrebno je jasno razlikovati od pokazatelja uporabe među zaposlenima.
 
+### 3. Vizija, ciljevi i pokazatelji ishoda › 3.3. Posebni cilj 1. Osnažiti ljudske potencijale za razvoj i primjenu UI-ja › Prioriteti Posebnog cilja 1
+
+*Dio 19 (id 1033729)*
+
+<details><summary>Izvorni tekst dijela</summary>
+
+> Prioritet 1.1. UI u formalnom obrazovanju i rani razvoj kompetencija
+> – Sadržaji o UI-ju postupno će se integrirati u osnovnoškolsko, srednjoškolsko i visoko obrazovanje, uz uvažavanje razvojne dobi učenika i pedagoških ciljeva. Naglasak će biti na razumijevanju temeljnih načela, kritičkoj procjeni sadržaja i rezultata UI sustava, medijskoj i UI pismenosti te sigurnoj, etičnoj i stvaralačkoj primjeni tehnologije. Razvoj kurikuluma i obrazovnih sadržaja pratit će sustavno osposobljavanje nastavnog osoblja, pružanje podrške obrazovnim ustanovama i razvoj naprednih programa za rano prepoznavanje i razvoj talenata. Visoka učilišta poticat će se na razvoj studijskih programa, mikrokvalifikacija i modularnih sadržaja oblikovanih u suradnji s gospodarstvom i javnim sektorom.
+> Prioritet 1.2. Razvoj i jačanje UI kompetencija kroz cjeloživotno učenje
+> – Građanima i radno aktivnom stanovništvu osigurat će se dostupni i kvalitetni programi za stjecanje UI kompetencija, od opće pismenosti do specijaliziranih znanja povezanih s konkretnim zanimanjima i poslovnim funkcijama. Programi će se oblikovati modularno, uz praktičnu primjenu alata i mogućnost priznavanja stečenih kompetencija. Financijske, geografske i organizacijske prepreke smanjivat će se korištenjem vaučera, mikrokvalifikacija, online i hibridnih oblika učenja te suradnjom obrazovnih ustanova, poslodavaca i službi tržišta rada. Posebna će se pozornost usmjeriti na skupine i djelatnosti najizloženije promjenama sadržaja rada. U suradnji sa socijalnim partnerima sustavno će se pratiti učinci primjene UI-ja na sadržaj i organizaciju rada, potrebe za vještinama, radne uvjete i kvalitetu radnih mjesta te će se ta pitanja uključivati u postojeće mehanizme socijalnog dijaloga.
+> Prioritet 1.3. Jačanje UI kompetencija državnih i javnih službenika
+> – Razvoj kompetencija u javnom sektoru obuhvatit će osnovnu UI pismenost, praktičnu uporabu alata, upravljanje podacima, nabavu i upravljanje sustavima UI-ja te primjenu etičkih, pravnih i sigurnosnih zahtjeva. Programi će se razlikovati prema ulozi i razini odgovornosti: od općih sadržaja za službenike do specijaliziranih programa za rukovoditelje, stručnjake za javnu nabavu, podatke, kibernetičku sigurnost, regulaciju i nadzor. Središnja stručna potpora omogućit će razmjenu znanja, razvoj standardiziranih sadržaja i širenje provjerenih primjera primjene među institucijama.
+> Prioritet 1.4. Podizanje svijesti, UI pismenost i društveno povjerenje – Razvoj UI-ja bit će
+> popraćen koordiniranim informativnim i edukativnim aktivnostima usmjerenima na jasno informiranje građana o mogućnostima, ograničenjima i rizicima povezanim s ovom tehnologijom. Uz nacionalne kampanje, provodit će se istraživanja percepcije i povjerenja, javne rasprave te aktivnosti prilagođene različitim dobnim, regionalnim i društvenim skupinama. Povjerenje će se graditi povezivanjem informiranja s konkretnim pravilima zaštite prava, transparentnošću institucija i uključivanjem civilnog društva, akademske zajednice, gospodarstva i socijalnih partnera u raspravu o društvenim učincima UI-ja.
+> Prioritet 1.5. Razvoj, privlačenje i zadržavanje UI talenata te međunarodna suradnja –
+> Republika Hrvatska će jačati razvoj i zadržavanje visoko specijaliziranih stručnjaka i istraživača povezivanjem obrazovanja, znanosti i gospodarstva, razvojem interdisciplinarnih profila te stvaranjem kvalitetnih istraživačkih i karijernih prilika. Poticat će se međunarodna mobilnost, uključivanje u europske mreže izvrsnosti i zajedničke projekte, suradnja s hrvatskom dijasporom te instrumenti za povratak i dugoročan rad stručnjaka u Republici Hrvatskoj. Ovaj je prioritet izravno povezan s razvojem nacionalne računalne infrastrukture, inovacijskog ekosustava i mogućnostima sudjelovanja u europskim strateškim projektima.
+
+</details>
+
+**Nadopuna teksta** — UDRUGA ZA RAZVOJ AUDIO VIZUALNE UMJETNOSTI "METAMEDIJ", 2026-10-29T09:06
+
+> Prijedlog dopune
+> Udruga za razvoj audio-vizualne umjetnosti Metamedij predlaže da se u okviru Prioriteta 1.1. izričito predvidi pristupačnost obrazovnih sadržaja o umjetnoj inteligenciji za djecu i mlade s teškoćama u razvoju te osobe s invaliditetom, uz povezivanje informacijske, medijske i financijske pismenosti.
+> Predlažemo sljedeću dopunu:
+> „Pri razvoju i provedbi obrazovnih sadržaja o umjetnoj inteligenciji u osnovnoškolskom i srednjoškolskom obrazovanju osigurat će se njihova pristupačnost učenicima s teškoćama u razvoju, primjenom prilagođenih metoda poučavanja, lako razumljivih i vizualno podržanih materijala te odgovarajuće stručne podrške. Sadržaji će, gdje je primjereno, povezivati informacijsku, medijsku i financijsku pismenost s odgovornom uporabom umjetne inteligencije, uključujući kritičko vrednovanje informacija, prepoznavanje dezinformacija i manipulativnih sadržaja, razumijevanje financijskih informacija i digitalnih plaćanja, prepoznavanje mogućih prijevara te provjeru savjeta generiranih uporabom umjetne inteligencije.”
+> Obrazloženje i istraživačka osnova
+> Preporuka se temelji na istraživanjima provedenima tijekom 2026. godine u okviru projekta
+> „3P – Pristup, Pismenost, Participacija”
+> , koji Udruga za razvoj audio-vizualne umjetnosti Metamedij provodi od 1. studenoga 2025. do 30. lipnja 2027. godine uz financijsku podršku programa Impact4Values 2.0.
+> Kvantitativno istraživanje provela je
+> doc.
+> dr.
+> sc.
+> Vanja
+> Marković
+> u siječnju 2026. godine
+> , među 49 roditelja djece i mladih s teškoćama u razvoju na području Pule, dok je
+> izv.
+> prof.
+> dr.
+> sc.
+> Krešimir
+> Krolo
+> u svibnju 2026. godine
+> proveo kvalitativno istraživanje kroz tri fokusne grupe s korisnicima, stručnjacima i institucionalnim dionicima.
+> Kvantitativno istraživanje pokazalo je da su roditelji financijsku pismenost svoje djece procijenili najnižom prosječnom ocjenom (2,47), u usporedbi s medijskom (2,57) i informacijskom pismenošću (2,64). Riječ je o roditeljskim procjenama lokalnog uzorka, a ne o izravnom testiranju kompetencija ili reprezentativnom nacionalnom istraživanju.
+> Nalazi upućuju na potrebu razvoja prilagođenih edukacijskih pristupa koji povezuju sve tri vrste pismenosti s novim izazovima umjetne inteligencije. Posebno je važno da razvoj UI pismenosti ne ostane ograničen na tehničku uporabu alata, nego obuhvati razumijevanje, kritičko vrednovanje i sigurnu primjenu informacija u svakodnevnom životu.
+> Predložena dopuna razrađuje postojeće ciljeve razvoja ljudskih potencijala i uključivog obrazovanja, bez potrebe za uspostavljanjem zasebnog strateškog cilja ili novih nastavnih predmeta.
+> Javno objavljeni rezultati istraživanja:
+> https://metamedia.hr/rezultati-istrazivanja-o-informacijskoj-medijskoj-i-financijskoj-pismenosti-djece-i-mladih-s-teskocama-u-razvoju/
+
 ### 3. Vizija, ciljevi i pokazatelji ishoda › 3.4. Posebni cilj 2. Osigurati suverenu, sigurnu i otpornu računalnu infrastrukturu i podatke
 
 *Dio 22 (id 1033732)*
@@ -679,6 +735,31 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 > Hoće li model biti dostupan gospodarstvu pod otvorenom licencom ili samo za istraživačke svrhe?
 > Korištenje:
 > Predlažem da uporaba modela u javnom sektoru ne bude obvezna, nego da se tijelima omogući odabir najprikladnijeg rješenja. Nametanje slabijeg alata moglo bi usporiti primjenu UI-ja umjesto da je ubrza.
+
+**Nadopuna teksta** — UDRUGA ZA RAZVOJ AUDIO VIZUALNE UMJETNOSTI "METAMEDIJ", 2026-10-29T09:43
+
+> Prijedlog dopune
+> Udruga za razvoj audio-vizualne umjetnosti Metamedij predlaže da se u okviru Prioriteta 2.4. „Veliki jezični model za hrvatski jezik” među razvojnim i evaluacijskim kriterijima izričito predvidi informacijska i kognitivna pristupačnost za osobe s invaliditetom te djecu i mlade s teškoćama u razvoju, osobito one s intelektualnim i komunikacijskim teškoćama.
+> Predlažemo sljedeću dopunu:
+> „Pri razvoju i vrednovanju velikog jezičnog modela za hrvatski jezik informacijska i kognitivna pristupačnost razmatrat će se kao jedan od kriterija njegove kvalitete i društvene korisnosti, osobito u primjenama namijenjenima osobama s invaliditetom te djeci i mladima s teškoćama u razvoju. To uključuje mogućnost prilagodbe složenih administrativnih, obrazovnih, financijskih i drugih informacija od javnog interesa u jednostavan i lako razumljiv hrvatski jezik, uz očuvanje izvornog značenja i činjenične točnosti. U relevantnim primjenama predvidjet će se stručna provjera generiranog sadržaja te, gdje je primjenjivo, provjera njegove razumljivosti i uporabljivosti u suradnji s osobama s invaliditetom, djecom i mladima s teškoćama u razvoju te stručnjacima koji im pružaju podršku.”
+> Obrazloženje i istraživačka osnova
+> Preporuka proizlazi iz istraživanja provedenih tijekom 2026. godine u okviru projekta
+> „3P – Pristup, Pismenost, Participacija”
+> , koji Udruga za razvoj audio-vizualne umjetnosti Metamedij provodi od 1. studenoga 2025. do 30. lipnja 2027. godine uz financijsku podršku programa Impact4Values 2.0.
+> Kvantitativno istraživanje među 49 roditelja djece i mladih s teškoćama u razvoju na području Pule provela je
+> doc. dr. sc. Vanja Marković u siječnju 2026. godine
+> , dok je kvalitativno istraživanje kroz tri fokusne grupe s korisnicima, stručnjacima i institucionalnim dionicima proveo
+> izv. prof. dr. sc. Krešimir Krolo u svibnju 2026. godine
+> .
+> Istraživanja su ukazala na prepreke u razumijevanju svakodnevnih i institucionalnih informacija te potrebu za njihovom jezičnom i vizualnom prilagodbom. U kvantitativnom istraživanju 47 % roditelja navelo je da svakodnevne informacije nisu prilagođene njihovu djetetu, dok je 65 % procijenilo da javne institucije rijetko ili uopće ne prilagođavaju informacije jezično i vizualno. Riječ je o roditeljskim procjenama lokalnog uzorka, koje se ne mogu statistički generalizirati na nacionalnu populaciju.
+> Za osobe s invaliditetom te djecu i mlade s teškoćama u razvoju pristup informacijama ne ovisi samo o njihovoj digitalnoj dostupnosti, nego i o mogućnosti razumijevanja sadržaja. To se posebno odnosi na informacije povezane s obrazovanjem, ostvarivanjem prava, javnim uslugama, financijskim obvezama i svakodnevnim donošenjem odluka.
+> Takav pristup povezuje
+> informacijsku, medijsku i financijsku pismenost
+> , koje su obuhvaćene istraživanjima projekta „3P – Pristup, Pismenost, Participacija”, s mogućnostima razvoja pristupačnih digitalnih alata na hrvatskom jeziku.
+> Razvoj nacionalnog jezičnog modela predstavlja moguću tehnološku podršku smanjivanju takvih informacijskih prepreka. Pritom primjena jezičnih modela za prilagodbu informacija nije bila predmet empirijskog testiranja u projektu 3P. Predložena mjera predstavlja javnopolitičku preporuku izvedenu iz istraživanjem identificiranih potreba korisnika, a ne tvrdnju o već dokazanoj učinkovitosti pojedinog tehnološkog rješenja.
+> Predložena dopuna ne podrazumijeva razvoj zasebnog modela niti automatsku prilagodbu svih službenih dokumenata. Cilj je da se pristupačnost osobama s invaliditetom i djeci i mladima s teškoćama u razvoju prepozna kao jedan od kriterija društvene korisnosti i kvalitete nacionalnog jezičnog modela, uz odgovarajuću stručnu provjeru i uključivanje korisnika.
+> Javno objavljeni rezultati istraživanja:
+> https://metamedia.hr/rezultati-istrazivanja-o-informacijskoj-medijskoj-i-financijskoj-pismenosti-djece-i-mladih-s-teskocama-u-razvoju/
 
 ### 3. Vizija, ciljevi i pokazatelji ishoda › 3.4. Posebni cilj 2. Osigurati suverenu, sigurnu i otpornu računalnu infrastrukturu i podatke › Pokazatelji ishoda Posebnog cilja 2
 
@@ -803,6 +884,50 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 > Kada se očekuje nacrt Zakona o provedbi Uredbe (EU) 2024/1689 i hoće li proći zasebno javno savjetovanje?
 > Koje je tijelo predviđeno za nadzor tržišta (čl. 70.) i hoće li se uspostavljati ili prijavljivati tijela za ocjenjivanje sukladnosti visokorizičnih UI sustava? Hoće li privatna poduzeća moći ishoditi status prijavljenog tijela?
 > Prioritet 3.1 spominje savjetodavnu točku i praktične alate za gospodarstvo. Hoće li ih pružati isključivo javna tijela ili je predviđeno i uključivanje akreditiranih privatnih savjetnika?
+
+### 3. Vizija, ciljevi i pokazatelji ishoda › 3.5. Posebni cilj 3. Uspostaviti sustav etične i zakonite primjene UI-ja › Prioriteti Posebnog cilja 3:
+
+*Dio 27 (id 1033737)*
+
+<details><summary>Izvorni tekst dijela</summary>
+
+> Prioritet 3.1. Koordinirani institucionalni okvir za provedbu europskog Akta o UI-ju
+> – Nadležnosti za provedbu i nadzor Akta o UI-ju uredit će se Zakonom o provedbi Uredbe (EU) 2024/1689. Provedbeni okvir temeljit će se na jasno razgraničenim nadležnostima, učinkovitim mehanizmima koordinacije i zajedničkim operativnim protokolima te će povezivati regulatorne, tržišno-nadzorne, podatkovne, kibernetičke i sektorske funkcije radi ujednačene primjene pravila. Mjere ovoga prioriteta provodit će se u skladu s donesenim zakonskim okvirom i nadležnostima utvrđenima na njegovoj osnovi. Republika Hrvatska već je, u skladu s člankom 77. stavkom 2. Akta o UI-ju, objavila popis tijela javne vlasti i javnih tijela nadležnih za nadzor ili provedbu obveza povezanih sa zaštitom temeljnih prava pri uporabi visokorizičnih UI sustava. Određivanje nacionalnih nadležnih tijela za provedbu Akta o UI-ju, uključujući tijela za nadzor tržišta u smislu članka 70., uredit će se provedbenim zakonskim okvirom. Uspostavit će se i nacionalni okvir za upravljanje UI-jem u javnom sektoru, uključujući standarde za razvoj, nabavu, uvođenje, praćenje i povlačenje sustava. Savjetodavna točka i praktični alati olakšat će gospodarstvu i javnim institucijama razumijevanje obveza, klasifikaciju rizika i pripremu potrebne dokumentacije. U okviru ovoga prioriteta osigurat će se aktivno sudjelovanje Republike Hrvatske u Europskom vijeću za umjetnu inteligenciju te koordinirana suradnja s Uredom za umjetnu inteligenciju Europske komisije. Podupirat će se uključivanje hrvatskih stručnjaka i dionika u Savjetodavni forum i Znanstveno povjerenstvo neovisnih stručnjaka, u skladu s pravilima njihova imenovanja, te osiguravati stručna priprema i koordinacija predstavnika Republike Hrvatske u relevantnim radnim tijelima Vijeća Europske unije..
+> Prioritet 3.2. Procjena rizika i zaštita temeljnih prava u visokorizičnim sektorima
+> – Razvit će se standardizirane metodologije i smjernice za procjenu rizika i učinaka UI sustava na temeljna prava, privatnost, nediskriminaciju i sigurnost, osobito u zdravstvu, obrazovanju, zapošljavanju, socijalnoj skrbi, pravosuđu i unutarnjoj sigurnosti. Pri razvoju metodologija za procjenu rizika i učinaka UI sustava na temeljna prava koristit će se i, prema potrebi, nacionalnom okviru prilagođavati metodologija Vijeća Europe HUDERIA za procjenu rizika i učinaka sustava umjetne inteligencije na ljudska prava, demokraciju i vladavinu prava. U dijelu koji se odnosi na obradu i zaštitu osobnih podataka metodologije i smjernice primjenjivat će se u skladu s Općom uredbom o zaštiti podataka i Zakonom o provedbi Opće uredbe o zaštiti podataka (NN 42/18). Procjene će sadržavati minimalni skup dokaza i testiranja, pragove za obveznu primjenu, mjere ublažavanja, ljudski nadzor, kontrolu kvalitete podataka i praćenje performansi. Uspostavit će se sustav prijave, analize i učenja iz incidenata kako bi se rizici pravodobno prepoznavali, a zaštitne mjere kontinuirano poboljšavale..
+> Prioritet 3.3. Transparentnost, objašnjivost i pravo na pravni lijek
+> – Građani moraju biti jasno informirani kada komuniciraju s UI sustavom ili kada se UI koristi u procesu koji može utjecati na njihova prava i interese. U javnom sektoru uspostavit će se registar UI sustava s podacima o svrsi, odgovornoj instituciji, kategoriji rizika, izvorima podataka, ljudskom nadzoru i kontaktnoj točki za pritužbe. Nacionalni registar uspostavit će se uz uvažavanje obveza registracije u bazi podataka Europske unije za visokorizične UI sustave iz Akta o UI-ju te će se, gdje je primjenjivo, osigurati povezivanje i ponovna uporaba već dostavljenih podataka kako bi se izbjeglo dvostruko izvještavanje obveznika.Za visokorizične UI sustave koji se u skladu s Aktom o UI-ju registriraju na nacionalnoj razini osigurat će se odgovarajući nacionalni postupak registracije. Obrada osobnih podataka u okviru registra i povezanih postupaka provodit će se u skladu s propisima o zaštiti osobnih podataka. Razvit će se standardi razumljivog objašnjenja i dokumentiranja odluka, kao i postupci za preispitivanje, pritužbe i pravnu zaštitu. Transparentnost će se provoditi razmjerno riziku, uz očuvanje sigurnosti, poslovnih tajni i drugih zakonom zaštićenih interesa.
+> Prioritet 3.4. Regulatorna izolirana okruženja kao potpora odgovornim inovacijama
+> – Regulatorna izolirana okruženja omogućit će razvoj i testiranje UI rješenja u kontroliranim uvjetima, uz regulatornu, etičku i tehničku potporu. Najmanje jedno regulatorno izolirano okruženje uspostavit će se i biti operativno do 2. kolovoza 2027., u skladu s rokom utvrđenim Aktom o UI-ju. Njihova je svrha rano prepoznati pravne i sigurnosne rizike, provjeriti usklađenost, razviti zajedničko razumijevanje regulatornih zahtjeva te smanjiti trošak i neizvjesnost uvođenja inovacija. Pristup će biti posebno važan za MSP-ove, startupove, istraživačke organizacije i javne institucije koje nemaju vlastite specijalizirane regulatorne kapacitete. Naučene lekcije koristit će se za razvoj smjernica i ujednačavanje prakse..
+> Prioritet 3.5. Razvoj etičkih kapaciteta i kulture odgovorne primjene UI-ja
+> – Etička, pravna i društvena pitanja integrirat će se u razvoj i uporabu UI sustava od najranijih faza i neće se tretirati kao naknadna formalna obveza. Razvijat će se edukacije, kodeksi ponašanja, sektorske smjernice i zajednice prakse za službenike, rukovoditelje, regulatore, suce, inspektore, istraživače i poduzeća. Posebno će se razviti smjernice za sigurnu i odgovornu uporabu generativnog UI-ja u javnom i privatnom sektoru. Smjernice će obuhvatiti razvrstavanje i zaštitu podataka prije njihova unošenja u UI sustave i javno dostupne UI usluge, zaštitu osobnih podataka, poslovnih tajni i prava intelektualnog vlasništva, upravljanje unosom i pristupom podacima, provjeru točnosti i vjerodostojnosti generiranih rezultata te jasno određivanje ljudske odgovornosti za njihovu uporabu. Posebna će se pozornost usmjeriti na ljudsku odgovornost, pristranost, kvalitetu podataka, sigurnost, zaštitu ranjivih skupina i procjenu društvenih učinaka. Kultura odgovorne primjene povezivat će se s UI pismenošću građana i službenika te s transparentnim javnim dijalogom.
+
+</details>
+
+**Nadopuna teksta** — UDRUGA ZA RAZVOJ AUDIO VIZUALNE UMJETNOSTI "METAMEDIJ", 2026-10-29T09:25
+
+> Prijedlog dopune
+> Udruga za razvoj audio-vizualne umjetnosti Metamedij predlaže da se u okviru Prioriteta 3.5. „Razvoj etičkih kapaciteta i kulture odgovorne primjene UI-ja” izričito predvidi aktivno i smisleno sudjelovanje osoba s invaliditetom te djece i mladih s teškoćama u razvoju u oblikovanju, razvoju i vrednovanju sustava umjetne inteligencije od javnog interesa, osobito onih koji utječu na pristup informacijama, obrazovanju, javnim uslugama i ostvarivanju prava.
+> Predlažemo sljedeću dopunu:
+> „Pri razvoju smjernica za odgovornu primjenu umjetne inteligencije te oblikovanju i vrednovanju sustava umjetne inteligencije od javnog interesa poticat će se pravodobno, smisleno i pristupačno sudjelovanje korisnika, osobito osoba s invaliditetom te djece i mladih s teškoćama u razvoju. U odgovarajuće faze razvoja i vrednovanja uključivat će se, prema potrebi, njihovi roditelji i skrbnici, relevantni stručnjaci te organizacije civilnog društva koje zastupaju njihove interese ili im pružaju podršku. Sudjelovanje će obuhvaćati prepoznavanje potreba i mogućih prepreka, pristupačne oblike savjetovanja i korisničkog testiranja te dokumentiranje načina na koji su povratne informacije korisnika razmotrene i primijenjene. Sudjelovanje djece i mladih organizirat će se na način primjeren njihovoj dobi, sposobnostima i komunikacijskim potrebama, uz odgovarajuće mjere zaštite privatnosti, dobrovoljnosti sudjelovanja i stručne podrške.”
+> Obrazloženje i istraživačka osnova
+> Preporuka se temelji na istraživanjima provedenima tijekom 2026. godine u okviru projekta
+> „3P – Pristup, Pismenost, Participacija”
+> , koji Udruga za razvoj audio-vizualne umjetnosti Metamedij provodi od 1. studenoga 2025. do 30. lipnja 2027. godine uz financijsku podršku programa Impact4Values 2.0.
+> Kvantitativno istraživanje među 49 roditelja djece i mladih s teškoćama u razvoju na području Pule provela je
+> doc. dr. sc. Vanja Marković u siječnju 2026. godine
+> , dok je kvalitativno istraživanje kroz tri fokusne grupe s korisnicima, stručnjacima i institucionalnim dionicima proveo
+> izv. prof. dr. sc. Krešimir Krolo u svibnju 2026. godine
+> .
+> Istraživanja su identificirala prepreke u pristupu i razumijevanju informacija te potrebu za prilagođenijim oblicima institucionalne komunikacije. Kvalitativni nalazi dodatno upućuju na važnost suradnje korisnika, roditelja, stručnjaka, organizacija civilnog društva i javnih institucija u oblikovanju pristupačnijih informacija i usluga. Riječ je o nalazima lokalnog istraživanja koji se ne mogu statistički generalizirati na nacionalnu populaciju.
+> Takvi nalazi posebno su relevantni za razvoj sustava umjetne inteligencije koji građanima pružaju informacije, posreduju u pristupu javnim uslugama ili pomažu u razumijevanju prava i obveza. Sustavi koji su tehnički funkcionalni ne moraju nužno biti razumljivi i uporabivi osobama s različitim kognitivnim, komunikacijskim i drugim potrebama.
+> Sudjelovanje osoba s invaliditetom te djece i mladih s teškoćama u razvoju omogućuje prepoznavanje prepreka koje se ne mogu uvijek utvrditi isključivo tehničkim vrednovanjem. Posebno je važno omogućiti njihovo neposredno sudjelovanje, a ne oslanjati se isključivo na posredne procjene roditelja, skrbnika ili stručnjaka, uz odgovarajuću podršku i zaštitne mjere.
+> Predložena dopuna predstavlja javnopolitičku preporuku izvedenu iz istraživanjem utvrđenih potreba za pristupačnijim informacijama i participativnim oblikovanjem usluga.
+> Projekt 3P nije empirijski vrednovao postupke participativnog razvoja sustava umjetne inteligencije
+> , stoga se preporuka ne predstavlja kao rezultat testiranja takvih sustava.
+> Dopuna konkretizira postojeće ciljeve etične i odgovorne primjene umjetne inteligencije, zaštite ranjivih skupina i procjene društvenih učinaka. Ne predlaže se obveza zasebnog korisničkog testiranja svakog sustava, nego razmjeran pristup, ovisno o namjeni sustava, njegovim korisnicima i mogućim učincima na njihova prava i svakodnevni život.
+> Javno objavljeni rezultati istraživanja:
+> https://metamedia.hr/rezultati-istrazivanja-o-informacijskoj-medijskoj-i-financijskoj-pismenosti-djece-i-mladih-s-teskocama-u-razvoju/
 
 ### 3. Vizija, ciljevi i pokazatelji ishoda › 3.6. Posebni cilj 4. Poticati istraživanje, inovacije, razvoj i primjenu UI-ja u gospodarstvu
 
@@ -979,6 +1104,30 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 **Nadopuna teksta** — PHI SAVJETOVANJE, OBRT ZA POSLOVNE USLUGE, VL. DOMEN VERDNIK, ZAGREB, ILICA 47, 2026-10-16T18:05
 
 > UI asistenti razlikovat će opće informacije od personaliziranih uputa i postupanja na temelju podataka iz službenih evidencija. Za personalizirane funkcije utvrdit će se dopušteni izvori, uvjeti pristupa i granice uporabe podataka. Informacije važne za ostvarivanje prava povezivat će se s provjerljivim i važećim službenim izvorima. Korisniku će biti omogućeno jednostavno povezivanje sa službenikom i korištenje odgovarajućeg alternativnog kanala, osobito kada sustav ne može pružiti pouzdan odgovor.
+
+**Nadopuna teksta** — UDRUGA ZA RAZVOJ AUDIO VIZUALNE UMJETNOSTI "METAMEDIJ", 2026-10-29T09:16
+
+> Prijedlog dopune
+> Udruga za razvoj audio-vizualne umjetnosti Metamedij predlaže da se u okviru poglavlja 4.3.1. „Digitalne javne usluge i komunikacija s građanima” izričito obuhvati kognitivna i informacijska pristupačnost, osobito za djecu i mlade s teškoćama u razvoju te osobe s invaliditetom. To uključuje razumljivost službenih informacija, administrativnih postupaka i financijskih obveza povezanih s ostvarivanjem prava i korištenjem javnih usluga.
+> Predlažemo sljedeću dopunu:
+> „Pri razvoju i uvođenju sustava umjetne inteligencije u javne usluge osigurat će se odgovarajuća razina kognitivne i informacijske pristupačnosti, uključujući uporabu jednostavnog i lako razumljivog jezika, jasnu strukturu informacija, odgovarajuću vizualnu podršku i alternativne načine komunikacije. Posebna pozornost posvetit će se razumljivosti informacija o pravima, administrativnim postupcima, naknadama, troškovima, rokovima i drugim obvezama građana. Umjetna inteligencija može se koristiti kao podrška prilagodbi informacija, uz obveznu provjeru njihove točnosti i očuvanja izvornog značenja te zadržavanje odgovornosti nadležnog tijela za službeni sadržaj. Razumljivost i uporabljivost rješenja provjeravat će se, gdje je primjenjivo, uz sudjelovanje korisnika s različitim kognitivnim i komunikacijskim potrebama, osobito osoba s invaliditetom te djece i mladih s teškoćama u razvoju, uz odgovarajuću stručnu podršku i prilagodbu načina sudjelovanja.”
+> Obrazloženje i istraživačka osnova
+> Preporuka se temelji na istraživanjima provedenima tijekom 2026. godine u okviru projekta
+> „3P – Pristup, Pismenost, Participacija”
+> , koji Udruga za razvoj audio-vizualne umjetnosti Metamedij provodi od 1. studenoga 2025. do 30. lipnja 2027. godine uz financijsku podršku programa Impact4Values 2.0.
+> Kvantitativno istraživanje među 49 roditelja djece i mladih s teškoćama u razvoju na području Pule provela je
+> doc. dr. sc. Vanja Marković u siječnju 2026. godine
+> , dok je kvalitativno istraživanje kroz tri fokusne grupe s korisnicima, stručnjacima i institucionalnim dionicima proveo
+> izv. prof. dr. sc. Krešimir Krolo u svibnju 2026. godine
+> .
+> U kvantitativnom istraživanju 47 % roditelja navelo je da svakodnevne informacije nisu prilagođene njihovu djetetu, dok je 65 % procijenilo da javne institucije rijetko ili uopće ne prilagođavaju informacije jezično i vizualno. Kvalitativno istraživanje dodatno je ukazalo na prepreke povezane sa složenom institucionalnom komunikacijom i potrebu za pristupačnijim informacijama. Nalazi se odnose na lokalni istraživački kontekst i ne predstavljaju reprezentativne podatke za Republiku Hrvatsku.
+> Digitalizacija javnih usluga ne uklanja automatski prepreke u razumijevanju informacija. To je osobito važno za djecu i mlade s teškoćama u razvoju te osobe s invaliditetom, kojima složene administrativne i financijske informacije mogu otežati razumijevanje prava i obveza, samostalno donošenje odluka i korištenje javnih usluga.
+> Predložena dopuna povezuje
+> informacijsku, medijsku i financijsku pismenost
+> s pristupačnošću digitalnih javnih usluga te konkretizira postojeću odrednicu Nacionalnog plana prema kojoj će primjena govornih i generativnih modela povećati pristupačnost usluga osobama s invaliditetom. Razumljive i pouzdane informacije posebno su važne u digitalnom okruženju, u kojem građani moraju razlikovati službene informacije od drugih sadržaja te razumjeti moguće financijske posljedice svojih odluka.
+> Umjetna inteligencija može olakšati pripremu razumljivijih informacija, ali ne smije zamijeniti odgovornost javnih institucija za njihovu točnost, pouzdanost i pristupačnost. Predložena mjera može se integrirati u postojeće procese razvoja i vrednovanja digitalnih javnih usluga, bez uspostavljanja zasebnog strateškog cilja.
+> Javno objavljeni rezultati istraživanja:
+> https://metamedia.hr/rezultati-istrazivanja-o-informacijskoj-medijskoj-i-financijskoj-pismenosti-djece-i-mladih-s-teskocama-u-razvoju/
 
 ### 4. Ključna područja primjene UI-ja u Republici Hrvatskoj › 4.3. Javna uprava, pravosuđe i javne usluge › 4.3.2. Potpora administrativnim, upravnim i pravosudnim postupcima
 
@@ -2222,3 +2371,29 @@ Različitih autora: **5**. Najaktivniji autor ima 69 od 79 komentara (87 %).
 > Predlažem stručnu i terminološku doradu pojmovnika. Potrebno je dosljedno razlikovati UI model, UI sustav i UI agenta. Trenutačne definicije agentskog UI-ja i UI agenta previše su vezane uz generiranje programskog koda i ne razgraničuju dovoljno model od sustava koji koristi alate i izvršava radnje. Definiciju umjetne inteligencije treba uskladiti sa širom definicijom UI sustava u istom pojmovniku, a definiciju velikog jezičnog modela ne ograničavati na podatke s interneta.
 > Definiciju generativnog UI-ja predlažem zamijeniti sljedećim tekstom: „Generativni UI označava modele i sustave umjetne inteligencije koji na temelju naučenih obrazaca i ulaznih uputa stvaraju sadržaj, primjerice tekst, slike, zvuk, video ili programski kod. Generirani sadržaj može biti netočan, pristran ili neprikladan, pa se njegova uporaba i provjera prilagođavaju namjeni i riziku sustava.”
 > Za pravne definicije potrebno je osigurati dosljednost s propisima na koje se dokument poziva, a za stručne definicije izbjeći nepotrebno vezivanje uz pojedine proizvode ili trenutačne izvedbe tehnologije. Ujedno predlažem završnu provjeru kratica, naziva, međusobnih upućivanja i jezične dosljednosti cijelog dokumenta.
+
+**Opći komentar** — MLADEN MILAVIĆ, 2026-10-30T10:24
+
+> 1. Ciljevi i mjerenje rezultata
+> Plan postavlja velike ciljeve, ali bilo bi dobro jasnije pokazati kako ćemo znati da su ulaganja donijela korist. Broj korisnika, projekata i uvedenih sustava nije dovoljan. Treba pratiti jesu li usluge građanima brže i jednostavnije, smanjuje li se administrativni posao, jesu li odluke kvalitetnije i osjećaju li se građani i zaposlenici sigurnije pri korištenju novih alata. Ako nešto ne daje rezultat, treba to vidjeti na vrijeme i promijeniti pristup.
+> 2. Osnovna AI pismenost javnih službenika
+> Predlažem da se za osnovnu AI pismenost javnih službenika postavi rok od 6-9 mjeseci od početka edukacije. Postojeće LMS (learning managemnt sustave) sustave treba iskoristiti za praktično učenje: kako koristiti AI, provjeriti odgovor i zaštititi podatke. Edukacija treba završiti kratkom provjerom znanja, uz mogućnost ponavljanja i dodatne podrške. Ako se izdaje certifikat o završetku edukacije, onda testiranje mora biti i praktično kroz LMS sustav. Za osobe koje zbog dugotrajnog bolovanja ili zdravstvenog stanja ne mogu sudjelovati treba osigurati prilagođen ili naknadni rok. Za svu edukaciju koristiti usluge CDU i to za sve državne službenike.
+> 3. Promjene na radu i dobrobit zaposlenika
+> UI će mijenjati poslove i način rada. Zato, uz produktivnost, treba pratiti i opterećenje zaposlenika, kvalitetu radnih mjesta i njihove mogućnosti za učenje i prilagodbu. Ljude treba uključiti prije uvođenja novih sustava, objasniti im što se mijenja i dati im vrijeme za stjecanje potrebnih vještina. Važno je da mogu postaviti pitanje ili prijaviti problem bez straha da će zbog toga biti okrivljeni. Takvo okruženje pomaže ljudima i institucijama da se lakše nose s promjenama. Sva pojašnjenja se mogu ubaciti u LMS sustave prije edukacije.
+> 4. Javne usluge i odgovornost prema građanima
+> Podržavam uporabu UI-ja za bržu obradu zahtjeva i jednostavniju komunikaciju s građanima. No građanin mora znati kada razgovara s UI sustavom, tko je odgovoran za odluku i kako može doći do službenika ako mu je potrebna pomoć. Ako sustav utječe na pravo, naknadu ili pristup javnoj usluzi, građanin mora moći dobiti objašnjenje i zatražiti ljudsko preispitivanje. Uspjeh treba mjeriti i prema pogreškama, pritužbama i iskustvu građana, a ne samo prema brzini obrade.
+> 5. Zdravstvo i digitalna podrška mentalnom zdravlju
+> Zdravstvo je područje u kojem pogreška može imati ozbiljne posljedice. To vrijedi i za digitalne alate koji se bave mentalnim zdravljem, emocionalnom dobrobiti ili psihološkom podrškom. Prije uvođenja takvog alata treba jasno utvrditi njegovu namjenu, granice i rizike te dokumentirati usklađenost s primjenjivim pravilima, uključujući GDPR i, gdje se primjenjuje, Akt o umjetnoj inteligenciji. Korisniku mora biti jasno pruža li alat opće informacije i podršku ili zdravstvenu uslugu. Treba definirati kada se razgovor mora usmjeriti prema kvalificiranoj osobi ili stručnoj pomoći. Takav alat može biti koristan, ali ne smije zamijeniti stručnjaka niti ostaviti korisnika bez pomoći kada mu je potrebna.
+> 6. Kibernetička sigurnost i kontinuitet rada
+> Plan dobro prepoznaje važnost sigurne infrastrukture, ali predlažem da izričito uključi i metode te procese oporavka nakon kibernetičkog napada. Nije dovoljno imati sigurnosnu kopiju; organizacija mora dokazati da je može vratiti u roku koji je sama odredila. Za kritične sustave, uključujući zdravstvo i javne usluge, treba tražiti odvojene i zaštićene kopije koje napadač ne može obrisati zajedno s produkcijskim sustavom, redovito testiranje oporavka te jasno određene odgovornosti. NIS2 i DORA među mjerama upravljanja rizicima obuhvaća kontinuitet poslovanja, sigurnosne kopije i oporavak nakon katastrofe te isto treba primijeniti na AI modele.
+> 7. Inovacije i pilot-projekti
+> Podržavam pilot-projekte i javnu nabavu inovativnih rješenja. Za svaki projekt trebalo bi unaprijed navesti koji problem rješava, kako će se mjeriti korist i koji su uvjeti za nastavak ili prekid. U nabavi treba vrednovati sigurnost, mogućnost oporavka, zaštitu podataka i stvarnu korist za korisnike, a ne samo cijenu ili veličinu dobavljača. Treba omogućiti i manjim poduzećima da pokažu rješenje u kontroliranim uvjetima. Ako pilot pokaže da pristup ne funkcionira, i to je korisno saznanje pod uvjetom da se iz njega nešto promijeni te stavi javnosti na uvid.
+> 8. Financiranje, rokovi i odgovornost
+> Kod financijskog okvira od 932,1 milijun eura bilo bi korisno jasnije razdvojiti sredstva koja su već osigurana od onih koja su tek planirana ili ovise o budućim proračunima i fondovima. Uz godišnje izvješće predlažem objaviti jednostavan pregled: koliko je potrošeno, što je ostvareno, gdje kasnimo i što će se poduzeti. U tablici mjera prvi akcijski plan obuhvaća razdoblje 2026.–2028., ali neki rokovi sežu do 2030. ili 2032. godine. Predlažem da se jasno razdvoje rokovi prvog akcijskog plana od dugoročnih ciljeva kako bi građani mogli pratiti što se treba napraviti i do kada.
+
+**Opći komentar** — VELIBOR BOŽIĆ, 2026-10-30T10:51
+
+> U privitku je link na tekst sa dodacima (označeno zelenom bojom)
+> Lp,
+> Velibor Božić
+> Cijeli dokument

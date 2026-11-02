@@ -40,7 +40,8 @@ def latest_snapshot(folder: Path) -> Path | None:
     return snaps[-1] if snaps else None
 
 
-def merge_snapshot(folder: Path, snapshot_dir: Path, *, model: str, created_at: str) -> dict:
+def merge_snapshot(folder: Path, snapshot_dir: Path, *, model: str, created_at: str,
+                   base: str | None = None) -> dict:
     meta = json.loads((folder / "meta.json").read_text(encoding="utf-8"))
     sections = _read_jsonl(folder / "sections.jsonl")
     comments = _read_jsonl(folder / "comments.jsonl")
@@ -97,6 +98,10 @@ def merge_snapshot(folder: Path, snapshot_dir: Path, *, model: str, created_at: 
         },
         "problemi": problems,
     }
+    if base:
+        # inkrementalni snapshot: ocjene dijelova prenesene iz `base`, novo su samo komentari
+        # i dijelovi kojima se promijenio tekst
+        snapshot["osnova"] = base
     (snapshot_dir / "snapshot.json").write_text(
         json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

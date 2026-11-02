@@ -29,7 +29,8 @@ popis mjesta gdje bi novi komentar najviše pomogao.
 
 | ID | Savjetovanje | Otvoreno | Komentara | Izvještaj |
 |---|---|---|---:|---|
-| [10346](https://esavjetovanja.gov.hr/Econ/10346) | Nacionalni plan za razvoj umjetne inteligencije za razdoblje do 2032. godine | 16.10. – 15.11.2026. | 79 | [pregled](data/savjetovanja/10346/README.md) |
+| [10346](https://esavjetovanja.gov.hr/Econ/10346) | Nacionalni plan za razvoj umjetne inteligencije za razdoblje do 2032. godine | 16.10. – 15.11.2026. | 85 | [pregled](data/savjetovanja/10346/README.md) · [stranica](https://esavjetovanje.domovina.ai/10346/) |
+| [10347](https://esavjetovanja.gov.hr/Econ/10347) | Akcijski plan za provedbu Nacionalnog plana za razvoj umjetne inteligencije do 2028. godine | 16.10. – 15.11.2026. | 12 | [pregled](data/savjetovanja/10347/README.md) · [stranica](https://esavjetovanje.domovina.ai/10347/) |
 
 Brojevi vrijede za trenutak preuzimanja (`scraped_at` u `meta.json`). Dok je
 savjetovanje otvoreno, komentari i dalje stižu.
@@ -49,8 +50,9 @@ uv run esavjetovanja scrape 10346
 # izradi Markdown izvještaj: statistika, autori, poglavlja, svi komentari uz izvorni tekst
 uv run esavjetovanja report 10346
 
-# izgradi stranicu u site/ (uzima zadnji snapshot analize) i objavi je na Cloudflare
-uv run esavjetovanja site 10346
+# izgradi stranicu u site/ (/<id>/ za svako savjetovanje, popis na /; uzima zadnji snapshot analize)
+# i objavi je na Cloudflare
+uv run esavjetovanja site 10346 10347
 npx wrangler deploy
 ```
 
@@ -123,17 +125,24 @@ koji navodi portal i upozori ako se razlikuju.
 
 Pravila po kojima model ocjenjuje opisana su u
 [analiza/METODOLOGIJA.md](analiza/METODOLOGIJA.md): jedinica analize, kriteriji,
-sidra ljestvice 0–100 i ograničenja. Ukupnu ocjenu računa kod (prosjek
+sidra ljestvice 0–100 i ograničenja. Upute koje dobiva svaki agent su u
+[analiza/prompt.md](analiza/prompt.md). Ukupnu ocjenu računa kod (prosjek
 kriterija), ne model.
+
+Kad se tekst ne promijeni (isti `otisak_teksta`), novi snapshot je
+**inkrementalni**: ocjene dijelova prenose se iz prethodnog, a analiziraju se
+samo novi komentari (`esavjetovanja merge <id> <snapshot> --base <prethodni>`).
 
 Svaka analiza je **snapshot**: zna se koji ju je model izradio, kada, nad
 koliko komentara i nad kojom verzijom teksta (otisak `otisak_teksta`). Kad
 stignu novi komentari ili se tekst promijeni, radi se novi snapshot, a stari
 ostaje u povijesti za usporedbu.
 
-| Snapshot | Model | Komentara | Ocjena |
-|---|---|---:|---:|
-| [2026-10-20](data/savjetovanja/10346/analize/2026-10-20_claude-opus-5-5/) | claude-opus-5-5 | 79 | 44 |
+| Savjetovanje | Snapshot | Model | Komentara | Ocjena |
+|---|---|---|---:|---:|
+| 10346 | [2026-10-20](data/savjetovanja/10346/analize/2026-10-20_claude-opus-5-5/) | claude-opus-5-5 | 79 | 44 |
+| 10346 | [2026-11-02](data/savjetovanja/10346/analize/2026-11-02_claude-opus-5-5/) (inkrementalni) | claude-opus-5-5 | 85 | 44 |
+| 10347 | [2026-11-02](data/savjetovanja/10347/analize/2026-11-02_claude-opus-5-5/) | claude-opus-5-5 | 12 | 48 |
 
 Ocjene su mišljenje jezičnog modela, ne službena ocjena dokumenta. Mjerodavan
 je izvorni tekst na portalu.
@@ -158,7 +167,8 @@ drugim, otprilike brzinom kojom bi stranicu pregledavao čovjek.
 - [x] Markdown izvještaj po savjetovanju
 - [x] LLM analiza po dijelovima dokumenta, snapshot s modelom i vremenom
 - [x] stranica esavjetovanje.domovina.ai
-- [ ] novi snapshot kad stignu novi komentari, usporedba snapshota
+- [x] novi snapshot kad stignu novi komentari, usporedba snapshota (oznaka „novo” na stranici)
+- [x] više savjetovanja na jednoj stranici: popis na `/`, svako savjetovanje na `/<id>/`
 - [ ] objavljeno izvješće o savjetovanju: prihvaćeni i odbijeni komentari s obrazloženjem
 - [ ] usporedba nacrta i konačnog teksta: što je od komentara ušlo u dokument
 
