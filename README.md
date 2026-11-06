@@ -29,7 +29,7 @@ popis mjesta gdje bi novi komentar najviše pomogao.
 
 | ID | Savjetovanje | Otvoreno | Komentara | Izvještaj |
 |---|---|---|---:|---|
-| [10346](https://esavjetovanja.gov.hr/Econ/10346) | Nacionalni plan za razvoj umjetne inteligencije za razdoblje do 2032. godine | 16.10. – 15.11.2026. | 85 | [pregled](data/savjetovanja/10346/README.md) · [stranica](https://esavjetovanje.domovina.ai/10346/) |
+| [10346](https://esavjetovanja.gov.hr/Econ/10346) | Nacionalni plan za razvoj umjetne inteligencije za razdoblje do 2032. godine | 16.10. – 15.11.2026. | 86 | [pregled](data/savjetovanja/10346/README.md) · [stranica](https://esavjetovanje.domovina.ai/10346/) |
 | [10347](https://esavjetovanja.gov.hr/Econ/10347) | Akcijski plan za provedbu Nacionalnog plana za razvoj umjetne inteligencije do 2028. godine | 16.10. – 15.11.2026. | 12 | [pregled](data/savjetovanja/10347/README.md) · [stranica](https://esavjetovanje.domovina.ai/10347/) |
 
 Brojevi vrijede za trenutak preuzimanja (`scraped_at` u `meta.json`). Dok je
@@ -142,6 +142,7 @@ ostaje u povijesti za usporedbu.
 |---|---|---|---:|---:|
 | 10346 | [2026-10-20](data/savjetovanja/10346/analize/2026-10-20_claude-opus-5-5/) | claude-opus-5-5 | 79 | 44 |
 | 10346 | [2026-11-02](data/savjetovanja/10346/analize/2026-11-02_claude-opus-5-5/) (inkrementalni) | claude-opus-5-5 | 85 | 44 |
+| 10346 | [2026-11-06](data/savjetovanja/10346/analize/2026-11-06_gemini-4/) (inkrementalni) | gemini-4 | 86 | 44 |
 | 10347 | [2026-11-02](data/savjetovanja/10347/analize/2026-11-02_claude-opus-5-5/) | claude-opus-5-5 | 12 | 48 |
 
 Ocjene su mišljenje jezičnog modela, ne službena ocjena dokumenta. Mjerodavan

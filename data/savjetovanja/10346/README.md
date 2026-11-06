@@ -2,18 +2,18 @@
 
 - Izvor: <https://esavjetovanja.gov.hr/Econ/10346>
 - Otvoreno: 2026-10-16 · zatvaranje: 2026-11-15 · očekivano izvješće: 2026-12-16
-- Preuzeto: 2026-11-02T20:01:06+00:00
+- Preuzeto: 2026-11-06T14:55:40+00:00
 - Dijelova dokumenta: 96
-- Komentara: 85 (portal navodi 85)
+- Komentara: 86 (portal navodi 86)
 
 ## Pregled
 
 | Vrsta | Broj |
 |---|---:|
 | Nadopuna teksta | 55 |
-| Opći komentar | 30 |
+| Opći komentar | 31 |
 
-Različitih autora: **8**. Najaktivniji autor ima 69 od 85 komentara (81 %).
+Različitih autora: **9**. Najaktivniji autor ima 69 od 86 komentara (80 %).
 
 ### Autori
 
@@ -25,6 +25,7 @@ Različitih autora: **8**. Najaktivniji autor ima 69 od 85 komentara (81 %).
 | ALEKSANDAR PERC | 2 | 2 | 0 |
 | SANJIN LEVAK | 2 | 2 | 0 |
 | DANIEL RIŠAVI | 1 | 1 | 0 |
+| SVEUČILIŠTE U ZAGREBU FAKULTET ELEKTROTEHNIKE I RAČUNARSTVA | 1 | 1 | 0 |
 | MLADEN MILAVIĆ | 1 | 1 | 0 |
 | VELIBOR BOŽIĆ | 1 | 1 | 0 |
 
@@ -38,6 +39,7 @@ Različitih autora: **8**. Najaktivniji autor ima 69 od 85 komentara (81 %).
 | 2026-10-20 | 1 |
 | 2026-10-29 | 4 |
 | 2026-10-30 | 2 |
+| 2026-11-04 | 1 |
 
 ### Po poglavljima
 
@@ -46,9 +48,9 @@ Različitih autora: **8**. Najaktivniji autor ima 69 od 85 komentara (81 %).
 | 4. Ključna područja primjene UI-ja u Republici Hrvatskoj | 45 |
 | 3. Vizija, ciljevi i pokazatelji ishoda | 14 |
 | 2. Uvod: strateški kontekst i analiza stanja | 10 |
+| 5. Mjere za provedbu posebnih ciljeva | 4 |
 | 6. Indikativni financijski plan | 4 |
 | 7. Upravljanje provedbom | 4 |
-| 5. Mjere za provedbu posebnih ciljeva | 3 |
 | Pojmovnik | 3 |
 | NACIONALNI PLAN ZA RAZVOJ UMJETNE INTELIGENCIJE ZA RAZDOBLJE DO 2032. GODINE | 1 |
 | 1. Izvršni sažetak | 1 |
@@ -2056,6 +2058,44 @@ Različitih autora: **8**. Najaktivniji autor ima 69 od 85 komentara (81 %).
 > Koji su planirani uvjeti pristupa okruženju za MSP-ove i startupove, je li sudjelovanje besplatno i kada se očekuje objava pravila sudjelovanja?
 > Hoće li u radu okruženja (tehnička evaluacija, testiranje, validacija) sudjelovati vanjski stručnjaci ili poduzeća te kojim modelom angažmana?
 > S obzirom na zakonski rok (2. kolovoza 2027.), koji je hodogram uspostave i tko je tehnički nositelj?
+
+**Opći komentar** — SVEUČILIŠTE U ZAGREBU FAKULTET ELEKTROTEHNIKE I RAČUNARSTVA, 2026-11-04T09:15
+
+> Predlažemo dodavanje odnosno vraćanje mjere 34. unutar posebnog cilja 2.
+> Obrazloženje:
+>
+> Mjera 34 – Jačanje proizvodnih i pilot kapaciteta za poluvodiče, fotoniku i kvantne čipove
+>
+> 1. Obrazloženje/pojašnjenje opisa mjere
+> Cilj investicije je uspostaviti i ojačati nacionalne kapacitete za razvoj, testiranje, validaciju i pilot proizvodnju poluvodičkih, fotoničkih i kvantnih komponenti te omogućiti njihovo aktivnije uključivanje u europske lance vrijednosti strateških tehnologija. Mjera je usmjerena na razvoj infrastrukturnih, tehnoloških i stručnih kapaciteta koji će istraživačkim organizacijama, startupovima, MSP-ovima i industriji omogućiti brži prijenos istraživanja i razvoja prema tržišno primjenjivim proizvodima.
+> Aktivnosti uključuju uspostavu i opremanje pilot linija i testnih okruženja, nabavu specijalizirane opreme za dizajn, karakterizaciju, validaciju i pakiranje poluvodičkih, fotoničkih i kvantnih komponenti, razvoj modela pristupa infrastrukturi za gospodarstvo i istraživački sektor, jačanje kompetencija stručnjaka te povezivanje s europskim istraživačkim i industrijskim mrežama u području poluvodičkih i kvantnih tehnologija.
+> Očekivani rezultat je uspostavljen nacionalni tehnološki kapacitet koji omogućuje razvoj i demonstraciju naprednih tehnoloških rješenja u području poluvodiča, fotonike i kvantnih tehnologija te njihovu integraciju u europske vrijednosne lance.
+> Mjera je strateški važna za povećanje tehnološke otpornosti, jačanje inovacijskog potencijala i smanjenje ovisnosti o vanjskim dobavnim lancima u području ključnih digitalnih tehnologija.
+> 2. Poveznica s obvezama prema EU
+> Mjera je izravno povezana s provedbom ciljeva
+> Europskog akta o čipovima (European Chips Act)
+> , kojim Europska unija nastoji povećati tehnološku suverenost, otpornost dobavnih lanaca i kapacitete za razvoj i proizvodnju poluvodičkih tehnologija. Uspostava pilot kapaciteta i uključivanje u europske mreže istraživačkih i proizvodnih kapaciteta predstavlja važan doprinos ostvarivanju ciljeva europske industrijske i tehnološke politike.
+> Investicija je povezana i s ciljevima programa
+> Strategic Technologies for Europe Platform (STEP)
+> , inicijativama za razvoj ključnih i dubokih tehnologija (deep tech), europskim politikama u području kvantnih tehnologija te aktivnostima koje proizlaze iz
+> Digital Decade Policy Programme 2030
+> . Posebno doprinosi razvoju kapaciteta za napredne digitalne tehnologije, jačanju istraživačke infrastrukture te povećanju konkurentnosti europskoga gospodarstva.
+> Mjera također podupire provedbu europskih inicijativa povezanih s razvojem fotoničkih tehnologija, kvantnog računarstva i kvantnih komunikacija te dugoročne ciljeve tehnološke suverenosti Europske unije u strateškim tehnološkim područjima.
+> 3. Zrelost/spremnost za provedbu
+> Mjera je
+> u srednjoj fazi zrelosti
+> . Na razini Europske unije već postoji jasno definiran strateški i financijski okvir za razvoj poluvodičkih, fotoničkih i kvantnih tehnologija, dok u Republici Hrvatskoj postoje istraživački, akademski i industrijski kapaciteti koji mogu predstavljati temelj za provedbu investicije.
+> Prije početka provedbe potrebno je detaljno definirati model upravljanja infrastrukturom, identificirati nositelje i korisnike pojedinih kapaciteta, razraditi tehničke specifikacije opreme i pilot linija te uskladiti aktivnosti s relevantnim europskim programima i mrežama. Također će biti potrebno provesti detaljnu analizu potreba tržišta i potencijalnih korisnika te definirati model dugoročne održivosti infrastrukture.
+> Uz provedbu pripremnih aktivnosti tijekom 2027. godine, uključujući izradu projektne i tehničke dokumentacije,
+> provedba investicije mogla bi započeti tijekom 2028. godine
+> .
+> 4. Troškovi
+> Procijenjena vrijednost investicije iznosi
+> 50 mil. EUR
+> .
+> Procjena se temelji na očekivanim troškovima uspostave i opremanja pilot linija i testnih okruženja, nabave specijalizirane laboratorijske i proizvodne opreme, razvoja infrastrukture za dizajn i validaciju komponenti, integracije u europske istraživačke i tehnološke mreže te provedbe aktivnosti jačanja kompetencija i prijenosa znanja.
+> Troškovi uključuju i aktivnosti povezane s upravljanjem infrastrukturom, uspostavom modela korištenja kapaciteta za poduzetnike i istraživačke organizacije, stručnu podršku tijekom provedbe, međunarodnu suradnju te aktivnosti promocije i privlačenja ulaganja u domaći ekosustav poluvodičkih, fotoničkih i kvantnih tehnologija.
+> Procjena je u ovoj fazi indikativna, a konačna vrijednost investicije bit će preciznije definirana nakon detaljne razrade tehničkog opsega, modela upravljanja i provedbenih aktivnosti.
 
 ### 6. Indikativni financijski plan › 6.1. Indikativna raspodjela sredstava i izvori financiranja
 

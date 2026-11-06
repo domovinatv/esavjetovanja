@@ -2,7 +2,7 @@
 
 - Izvor: <https://esavjetovanja.gov.hr/Econ/10347>
 - Otvoreno: 2026-10-16 · zatvaranje: 2026-11-15 · očekivano izvješće: 2026-12-16
-- Preuzeto: 2026-11-02T20:13:17+00:00
+- Preuzeto: 2026-11-06T14:56:07+00:00
 - Dijelova dokumenta: 49
 - Komentara: 12 (portal navodi 12)
 

@@ -6,12 +6,12 @@
   "closed": "2026-11-15",
   "report_expected": "2026-12-16",
   "totals": {
-    "comments": 85,
-    "general": 30,
+    "comments": 86,
+    "general": 31,
     "addition": 55
   },
   "sections": 96,
-  "comments_scraped": 85,
+  "comments_scraped": 86,
   "documents": [
     {
       "name": "Savjetovanje s javnošću o Nacionalnom planu za razvoj umjetne inteligencije za razdoblje do 2032. godine.docx",
@@ -34,5 +34,5 @@
       "kind": "Dokument savjetovanja"
     }
   ],
-  "scraped_at": "2026-11-02T20:01:06+00:00"
+  "scraped_at": "2026-11-06T14:55:40+00:00"
 }
